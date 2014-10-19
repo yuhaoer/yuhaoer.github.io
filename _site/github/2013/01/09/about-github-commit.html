@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>关于github commit后文件排序的问题 育好儿</title>
+        <meta name="keywords" content="github,github pages,文件排序onlyfu,fuweiyi,blog,logs,博客"/>
+        <meta name="description" content="傅唯一的博客，学习写作与工作生活记录" />
+		<meta name="baidu-site-verification" content="7P3zJDwukPDw2LOy" />
+        <link href="/css/common.css" rel="stylesheet" type="text/css" />
+        <link href="/prettify/prettify.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="/favicon.ico"/>
+		<link rel="bookmark" href="/favicon.ico"/>
+		<script type="text/javascript" src="/jquery.js"></script>
+		<script type="text/javascript" src="/prettify/prettify.js"></script>
+</head>
+<body>
+        <div class="wrap">
+		<div class="header radius black">
+			<h2><a href=""></a></h2>
+            <ul>
+            <li>
+                首页
+            </li>
+            <li>
+                线下活动
+            </li>
+            <li>
+                产品发布
+            </li>
+            <li>
+                热门问题
+            </li>
+            </ul>
+			<span class="right">如果您没有OUT，请使用Firefox,Chrome,Safari浏览本站</span>
+		</div>
+
+	<div class="main">
+		<div class="postbox radius">
+            <h2 class="first_title">关于github commit后文件排序的问题</h2>
+            <p class="posted_info">
+                posted by 傅唯一 on 2013-01-09 分类: <a href="/categorys/github.html">github</a>
+            </p>
+            <div class="postcontent">
+			<p>没搞明白我在本地编辑的文件，commit后排在以前文件的前面，这样在生成pages的时候，用site.posts做循环的时候，就是正序，最新的排在最后了。但我看其它项目里的文件排序都是正确的，很奇怪的一个问题，有人能解答一下么？</p>
+<p>fuwy[at]foxmail.com</p>
+<p>
+<strong>
+结论：排序是按时间，字母为顺序，如：2012-08-01肯定是排在2012-08-02的前面，如果两个日期一样，就看首写字母，按a-z的顺序排，如：2012-08-01-a肯定排在2012-08-01-b的前面，所以，如果有日期相同的页面，可以使用这样的规则进行添加文件名，就可以了。
+</strong>
+</p>
+
+            </div>
+            
+    		<div class="likepost">
+    			<h2>相关日志</h2>
+    			<ul>
+    				
+    				<li><a href="/github/2014/09/22/github-and-jekyll-resources.html">Jekyll和Github资源汇总</a></li>
+    				
+    				<li><a href="/github/2013/01/25/bind-domain.html">基于GitHub搭建免费无限流量blog--绑定域名</a></li>
+    				
+    				<li><a href="/github/2013/01/21/a-github-pages-qiang-hou.html">github pages被墙，目前的应对方式</a></li>
+    				
+    				<li><a href="/github/2013/01/10/k-github-pages-build-failed.html">关于github pages构建失败</a></li>
+    				
+    				<li><a href="/github/2013/01/10/jekyll-category.html">jekyll为文章设置分类及相关文章读取</a></li>
+    				
+    			</ul>
+    		</div>
+			<div id="disqus_thread"></div>
+            <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'fuweiyi'; // required: replace example with your forum shortname
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</div>
+	</div>
+		<div class="blank20"></div>
+                <div class="footer radius">
+                        &copy; 傅唯一 2012-2013 Powered by GitHub <a href="https://github.com/mojombo/jekyll" target="_blank">jekyll</a>
+                </div>
+		<div style="display:none;">
+		<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F02dd3320304085dfa94f6456bb126ed4' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		</div>
+        </div>
+</body>
+</html>
+
+

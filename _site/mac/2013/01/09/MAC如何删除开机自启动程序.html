@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>MAC如何删除开机自启动程序 育好儿</title>
+        <meta name="keywords" content="MAC,开机自启动程序onlyfu,fuweiyi,blog,logs,博客"/>
+        <meta name="description" content="傅唯一的博客，学习写作与工作生活记录" />
+		<meta name="baidu-site-verification" content="7P3zJDwukPDw2LOy" />
+        <link href="/css/common.css" rel="stylesheet" type="text/css" />
+        <link href="/prettify/prettify.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="/favicon.ico"/>
+		<link rel="bookmark" href="/favicon.ico"/>
+		<script type="text/javascript" src="/jquery.js"></script>
+		<script type="text/javascript" src="/prettify/prettify.js"></script>
+</head>
+<body>
+        <div class="wrap">
+		<div class="header radius black">
+			<h2><a href=""></a></h2>
+            <ul>
+            <li>
+                首页
+            </li>
+            <li>
+                线下活动
+            </li>
+            <li>
+                产品发布
+            </li>
+            <li>
+                热门问题
+            </li>
+            </ul>
+			<span class="right">如果您没有OUT，请使用Firefox,Chrome,Safari浏览本站</span>
+		</div>
+
+	<div class="main">
+		<div class="postbox radius">
+            <h2 class="first_title">MAC如何删除开机自启动程序</h2>
+            <p class="posted_info">
+                posted by 傅唯一 on 2013-01-09 分类: <a href="/categorys/mac.html">mac</a>
+            </p>
+            <div class="postcontent">
+			<p>最近，razer的设置程序把我搞得一头雾水，因为我发现在MAC上，这款程序经常不能保存我的配置，还经常开机自己打开界面，所以我不得不取消登录。取消后发现，DeathdAdder3500根本不需要这个程序来配置设置，在MAC用起来就已经很不错了，所以，我打算删除它。</p>
+<p>删除它的程序很容易，因为MAC很容易，直接拉黑就行了，不过却发现，开机后，它的启动小图标依然在任务栏上，显然MAC的开机自启动程序列表里肯定有它的身影，但这个要怎么取消还真没弄过。google了一下，一般提供的方法很显而易见的：</p>
+<p><strong>打开用户群组偏好设置（可以在「系统偏好」设置里选择「用户与群组」（图1），也可以屏幕右上角点自己的名字选择「用户与群组偏好设置」（图2））</strong></p>
+<p><img src="http://www.fuweiyi.com/blog/wp-content/uploads/2013/01/258A046F-221B-4129-9BAD-7C5C46D300CD.jpg" alt="pic1" /></p>
+<p style="text-align:center;">(图1)</p>
+<p><img src="http://www.fuweiyi.com/blog/wp-content/uploads/2013/01/屏幕快照-2013-01-09-上午10.33.45.png" alt="pic1" /></p>
+<p style="text-align:center;">(图2)</p>
+<p>选择自己帐户=>选择登录项=>选中不想开机自启动的程序=>点击下面的减（-）号（图3）</p>
+<p><img src="http://www.fuweiyi.com/blog/wp-content/uploads/2013/01/屏幕快照-2013-01-09-上午10.38.43.png" alt="pic1" /></p>
+<p style="text-align:center;">(图3)</p>
+<p>这种方法只能取消上面列出来的程序，但有些程序并没有在这个列表里显示，比如razer的驱动配置程序，所以，这个办法行不太通。之后查询命令行的操作，找到了对应的方法：</p>
+<p>有些程序在安装的时候，会生成一个或几个plist文件，用来执行开机自启动，这样的文件一般放在3个位置</p>
+<p>/Library/LaunchDaemons/<br/>
+	/Library/LaunchAgents/<br/>
+	~/Library/LaunchAgents/
+</p>
+<p>这里有两个LaunchAgents，一个是根目录下，一个用户目录，一般打开终端后，用ls -l命令就可以看到一个Library，进入后，就能看到一个LaunchAgents目录。如果用cd /Library即可进入根目录下的Library目录，里面就有LaunchDaemons和另一个LaunchAgents目录，里面都有一些plist文件，razer的plist文件就在/Library/LaunchAgents/目录里（图4）。</p>
+<p><img src="http://www.fuweiyi.com/blog/wp-content/uploads/2013/01/屏幕快照-2013-01-09-上午10.49.13.png" alt="pic1" /></p>
+<p style="text-align:center;">(图4)</p>
+<p>找到文件后，这里需要使用launchctl命令来取消它</p>
+<p>launchctl unload com.razer.rzupdater.plist</p>
+<p>launchctl unload com.razerzone.rzdeviceengine.plist</p>
+<p>执行完两条命令后，任务栏上的razer图标就不见了，再开机也不会再启动。</p>
+<p>后话：这个问题，说明MAC在处理自启动的问题时，还不够方便。还有就是razer的程序不够友好。</p>
+
+            </div>
+            
+    		<div class="likepost">
+    			<h2>相关日志</h2>
+    			<ul>
+    				
+    				<li><a href="/mac/2014/04/13/a-mac-osx-sublime-Package-Control.html">OSX版sublime text 2/3安装Package Control</a></li>
+    				
+    				<li><a href="/mac/2013/07/22/a-mac-osx-del-launchpad-ico.html">删除Launchpad中的图标方法</a></li>
+    				
+    				<li><a href="/mac/2013/01/09/MAC%E5%A6%82%E4%BD%95%E5%88%A0%E9%99%A4%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8%E7%A8%8B%E5%BA%8F.html">MAC如何删除开机自启动程序</a></li>
+    				
+    				<li><a href="/mac/2012/08/13/a-osx-ml-apache-php-mysql.html">更新OSX Mountain Lion后，Apache和PHP相关问题</a></li>
+    				
+    				<li><a href="/mac/2012/05/08/a-mac-svn.html">MAC配置SVN服务器</a></li>
+    				
+    			</ul>
+    		</div>
+			<div id="disqus_thread"></div>
+            <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'fuweiyi'; // required: replace example with your forum shortname
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</div>
+	</div>
+		<div class="blank20"></div>
+                <div class="footer radius">
+                        &copy; 傅唯一 2012-2013 Powered by GitHub <a href="https://github.com/mojombo/jekyll" target="_blank">jekyll</a>
+                </div>
+		<div style="display:none;">
+		<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F02dd3320304085dfa94f6456bb126ed4' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		</div>
+        </div>
+</body>
+</html>
+
+

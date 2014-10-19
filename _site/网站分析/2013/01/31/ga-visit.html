@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>GA网站分析visit统计规则与流量来源覆盖原则 育好儿</title>
+        <meta name="keywords" content="onlyfu,fuweiyi,blog,logs,博客"/>
+        <meta name="description" content="傅唯一的博客，学习写作与工作生活记录" />
+		<meta name="baidu-site-verification" content="7P3zJDwukPDw2LOy" />
+        <link href="/css/common.css" rel="stylesheet" type="text/css" />
+        <link href="/prettify/prettify.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="/favicon.ico"/>
+		<link rel="bookmark" href="/favicon.ico"/>
+		<script type="text/javascript" src="/jquery.js"></script>
+		<script type="text/javascript" src="/prettify/prettify.js"></script>
+</head>
+<body>
+        <div class="wrap">
+		<div class="header radius black">
+			<h2><a href=""></a></h2>
+            <ul>
+            <li>
+                首页
+            </li>
+            <li>
+                线下活动
+            </li>
+            <li>
+                产品发布
+            </li>
+            <li>
+                热门问题
+            </li>
+            </ul>
+			<span class="right">如果您没有OUT，请使用Firefox,Chrome,Safari浏览本站</span>
+		</div>
+
+	<div class="main">
+		<div class="postbox radius">
+            <h2 class="first_title">GA网站分析visit统计规则与流量来源覆盖原则</h2>
+            <p class="posted_info">
+                posted by 傅唯一 on 2013-01-31 分类: <a href="/categorys/网站分析.html">网站分析</a>
+            </p>
+            <div class="postcontent">
+			<p>Visit这个度量是网站分析的基石。对于Google Analytics来说，Visit是一个灵魂角色。互联网日新月异，新的浏览器造就新的访问行为，网络多渠道营销的部署，给效果评估与优化带来了极大的复杂性。为了适应互联网环境的变化，Google Analytics对这个灵魂角色进行了重新定义，以更符合用户的实际浏览行为意图，更真实地反映多渠道营销效果转化。不得不感叹Google Analytics的强大，目前使用Google Analytics的网站占所有网站的56.9%，占所有使用网站分析工具的网站的81.9%。作为一款免费的网站分析工具，已经走在别人的前头，更可怕的是它一直在进步。</p>
+
+<h3 id="google-analyticsvisit">Google Analytics统计Visit的旧规则</h3>
+
+<ol>
+  <li>同一个访问者的两个相邻pageviews之间（也可以是被GA监测的action）的时间间隔如果超过了30分钟，会被记录为一个新的visit。</li>
+  <li>一天结束时，持续的浏览行为自动被切分为两个visit。</li>
+  <li>关掉浏览器，重新打开浏览器访问网站，记录为一个新的visit，即使关闭打开浏览器的时间间隔少于30分钟，也记录一次新的visit。</li>
+</ol>
+
+<p><strong>注意:</strong></p>
+
+<blockquote>
+  <p>现在常用的浏览器大多是多标签式：一个窗口下多个tab的。请问如果在浏览器中关闭了某个网站的所有tab，10分钟之后又新建一个tab打开这个网站，这样算关闭浏览器吗？cookie会失效吗？会重新计算visit吗？</p>
+</blockquote>
+
+<blockquote>
+  <p>不重新计算visit。GA是通过暂时性的Cookie来识别Visit，暂时性Cookie的存活期随浏览器的关闭而失效，即暂时性Cookie与浏览器共存亡。即使关闭了浏览器上某个网站所有打开网页，只要浏览器未关闭，那么关于这个网站的暂时性Cookie依然好好活着（存活期30分钟）。所以即使是关闭了网站所有打开的tab，只要是没关闭浏览器，30分钟内，重新打开网站就不算是离开。</p>
+</blockquote>
+
+<h3 id="google-analyticsvisit-1">Google Analytics统计visit规则的重大变化</h3>
+<ol>
+  <li>同一个访问者的两个相邻pageviews之间（也可以是被GA监测的action）的时间间隔如果超过了30分钟，会被记录为一个新的visit。</li>
+  <li>一天结束时，持续的浏览行为自动被切分为两个visit。</li>
+  <li>一个访问者更换了与原先来源不同的其他来源再次访问这个网站，也会被记为一个新的visit，即使在30分钟内更换也如此。但更换为直接流量除外（外链也不会算作新来源），</li>
+</ol>
+
+<blockquote>
+  <p>流量来源信息包含: utm_source, utm_medium, utm_term, utm_content, utm_id, utm_campaign, and gclid。</p>
+</blockquote>
+
+<p>与旧定义唯一的区别在于：“换了来源再访问”记一次新visit。我的理解，就是再无“关闭浏览器“这个概念。如果你还在为”关闭浏览器“怎么算里犯晕，我们一起来分析下面两个场景。</p>
+
+<p><strong>场景一：</strong></p>
+
+<blockquote>
+  <p>大熊通过百度搜索“Google Analytics”，点击搜索结果进入<a href="http://www.godtoo.com/" target="_blank" title="godtoo">“godtoo”</a>网站，没找到自己想要的信息。于是，又回到百度搜索“网站分析visit”，结果进入本文<a href="http://www.godtoo.com/blog/2013/01/31/ga-visit.html" target="_blank">《Google Aanlytics网站分析visit统计规则与流量来源覆盖原则》</a>。假设两次搜索动作用户没有关闭浏览器（对于多标签浏览器来说，第一次打开的搜索结果页是否关闭已不重要），且整个过程发生在30分钟内。按照新的定义，Visit=2。关键词“Google Analytics”和“网站分析visit”各带了一个visit。如果按旧的定义，因两个pageview之间在30分钟内（未关闭浏览器），则只计一个visit，这里visit= 1。且GA处理的机制是：“Google Analytics”关键词Visit增加1，“网站分析visit”visit 增加0。则关键词报表中有可能出现有些关键词的visit为0的情况。</p>
+</blockquote>
+
+<p><strong>场景二:</strong></p>
+
+<blockquote>
+  <p>大熊通过收藏夹进入<a href="http://www.godtoo.com/" target="_blank" title="godtoo">“godtoo”</a>网站，突然部门老大出现在身边，他下意识的直接关掉了浏览器，几分钟后老大离开，他又打开浏览器，在浏览器的地址栏中重新输入<a href="http://www.godtoo.com/" target="_blank" title="godtoo">www.godtoo.com</a>，然后继续浏览页面。在这个过程中，会为我的网站创造几个visit？按照新的定义，答案是：visit =1 。在旧的visit定义中，visit会增加1，即整个过程会有2个visit。因为关闭浏览器会让统计visit的一个临时cookie过期（所谓临时cookie，即是随着浏览器关闭而立即过期的cookie）。但是在新的visit定义中，visit不会增加1，因为定义中并没有任何关于浏览器关闭的情况。事实上，之前的那个临时cookie仍然存在，而且仍然会随着浏览器关闭而过期，但是它的内容却不改变了。</p>
+</blockquote>
+
+<p>用一张图来说明：
+<img src="/images/201301/ga/ga_visit_yuanze.jpg" alt="Alt &quot;google analytics 网站分析流量来源覆盖原则&quot;" /></p>
+
+<h3 id="ga">GA中访问的来源/媒介一般包括以下四类：</h3>
+
+<ul>
+  <li>市场广告投放（Campaigns）：一切通过网址构建工具手动标注的访问来源。</li>
+  <li>自然搜索（Organic）:通过搜索引擎的自然搜索结果进入，SEM的链接必须用构建工具标注后才归入市场投放类来源，否则当作自然搜索。</li>
+  <li>推荐网站（Referral）:来自于当前GA统计账户所标记的域名/子域名以外的网站带来的流量（即去除内链）。比如站外引用和友情链接（如果这些链接的URL经过了网址构建工具加入了标注，就变成了市场投放性质）等。</li>
+  <li>直接访问（Direct）：直接访问，来自桌面软件中的链接，收藏夹访问，或者是无法识别来源等来源。</li>
+</ul>
+
+<p>在了解这个规则之前，先介绍Google Analytics的几个时间设定：</p>
+
+<ul>
+  <li>Google Analytics的Cookie的有效时间是2年。就是说，如果你3年前来过网站，就算你电脑一直没重装过，也没删除过Cookie，GA都会认为你是新访客。</li>
+  <li>Google Analytics的Campaign Cookie的有效期是6个月。即如果5个前，你是从免费关键词过来的，之后再也没回来过，那Google Analytics还记得你是从这儿来的，因此如果今天你直接输入abc.com，Google Analytics还会把你算成是从免费关键词进来的。</li>
+  <li>Google Analytics设定的一次访问与会话的有效期是30分钟，这30分钟是指你不发生浏览行为的情况下，一次会话将在30分钟后失效，如果你是超人一直浏览，那么则会在凌晨12点的时候失效。</li>
+</ul>
+
+<h3 id="google-analytics">Google analytics中几种访问来源的覆盖关系（冲洗定义）</h3>
+
+<p>流量来源覆盖是指：_utmz cookie中utmcsr值的重写。前面提到，这四类流量来源的优先级别是不一样的，优先级别的不一样涉及到visit是否要增加，以及visit的归属问题（即转化归属问题）。下面即将介绍的优先级原则，都是在上面这三个时间范围内有效。</p>
+
+<p>第一种：两个pageview之间（有部署GA代码的事件同样的道理）的时间间隔不超过30分钟（包含30分钟内关闭了浏览器后又重新打开）；</p>
+
+<ul>
+  <li>投放活动永远可以覆盖其他来源,增加一次visit(按旧定义不增加visit数，且前一次来源被覆盖)</li>
+  <li>自然搜索永可以覆盖其他来源，增加一次visit，即使是同一搜索引擎的自然搜索不同关键词过来也是增加一次visit（按旧定义，visit不增加，但会记录下两次搜索的关键词，visit归属到第二个关键词上。）</li>
+  <li>推荐网站永远不能覆盖其他来源，不增加visit</li>
+  <li>直接输入永远不能覆盖其他来源，不增加visit</li>
+</ul>
+
+<p>第二种：两个pageview之间（有部署GA代码的事件同样的原理）的时间间隔超过30分钟（也许你页面开着，去干别的事情，离开30分钟后再次访问；也有可能是浏览器关了后，包括你重启电脑，30分钟后重新打开页面），这里也包含两次会话时间间隔超过30分钟的情况，比如隔了好几天再访问。</p>
+
+<ul>
+  <li>投放活动永远可以覆盖其他来源</li>
+  <li>自然搜索永远可以覆盖其他来源</li>
+  <li>推荐网站永远可以覆盖其他来源</li>
+  <li>直接输入永远不可以覆盖其他来源</li>
+</ul>
+
+<p><strong>注意:</strong></p>
+
+<blockquote>
+  <p>这里的“其他来源”是用户开启此次会话前该用户的历史记录来源（_utmz cookie中utmcsr值）</p>
+</blockquote>
+
+<p><img src="/images/201301/ga/ga_trffic_source.jpg" alt="Alt &quot;google analytics 网站分析流量来源覆盖原则&quot;" /></p>
+
+<p>由此，我们可以发现，visit统计规则重新定义后，流量来源覆盖更确切的是发生在两次会话时间间隔超过30分钟，以及在两个PV时间间隔超过30分钟的情况下。据此我们可以对“同次访问”和”回访”下一个精确的定义。</p>
+
+<p>同次访问（一次会话）:</p>
+
+<blockquote>
+  <p>在没有发生流量来源更换的情况下，两次PV时间间隔不超过30分钟。</p>
+</blockquote>
+
+<p>回访（开启新会话）:</p>
+
+<blockquote>
+  <ol>
+    <li>发生流量来源覆盖。</li>
+    <li>在没有发生流量覆盖的情况下的两次PV时间间隔超过30分钟。</li>
+    <li>同次访问正好经过了凌晨12点，12点后visit增加1，算一次回访。</li>
+  </ol>
+</blockquote>
+
+<h3 id="section">总结（场景模拟）</h3>
+<p>让我们来模拟一个场景，把上面所有的情况串联起来。假设<a href="http://www.godtoo.com/" target="_blank" title="godtoo">“godtoo”</a>网站刚发布不久，且百度已有收录，在A网站投放了banner广告，在B导航网站有了链接。今天刚部署好Google analytics统计代码，你是第一位也是唯一的位访客。</p>
+
+<p><strong>第一步：</strong></p>
+
+<p>你的首次访问是通过百度搜索“google analytics流量来源覆盖”找到本文，此时，百度自然搜索来源visit增加1，归属到关键词“google analytics流量来源覆盖”。</p>
+
+<p><strong>第二步：</strong></p>
+
+<p>10分钟后，阅读完本文，然后又通过百度搜索“用户体验”，进入了我的另一篇文章<a href="http://www.godtoo.com/blog/2013/01/29/ucd.html">《用户体验要素-以用户为中心的产品设计读书笔记》</a>，此时，百度自然搜索来源visit增加1，归属到关键词“用户体验”，当前网站总visit=2, 百度来源总visit=2。</p>
+
+<p><strong>第三步：</strong></p>
+
+<p>由于文章<a href="http://www.godtoo.com/blog/2013/01/29/ucd.html">《用户体验要素-以用户为中心的产品设计读书笔记》</a>篇幅较长，内容较深奥，阅读时间超过了35分钟（期间无刷新网页），阅读完后，你觉得我的文章不错，点击回到网站的首页，想看看该网站还有没有想关文章。由于两次PV的时间间隔超过30分钟，visit+1，返回首页这次的visit的实际来源应该是直接访问(有待探讨)，根据流量来源覆盖原则，直接访问不能覆盖上一次visit的来源，所以，此时，百度搜索来源visit+1，归属到关键词“用户体验”，百度搜索来源总visit = 3，关键词“google analytics流量来源覆盖”带来1个visit，关键词“用户体验”带来2个visits。</p>
+
+<p><strong>第四步：</strong></p>
+
+<p>你发现首页没有内容吸引你，你跑到了A网站看新闻，不小心点击了下我在A网投放的banner广告条（假设回到我的网站首页到你点击banner条的时间间隔不超过30分钟），你发现又回到了我的网站，随手关掉了。此时，A网站投放visit+1(切记，这里是按GA投放市场广告标记链接，如果这里是通过外链过来，则不增加visit,也不覆盖流量来源)，并不覆盖“用户体验”（回到网站首页这次直接访问visit归属到该词）这次带来的visit。现在网站总的visit=4，百度搜索=3，A网站banner投放=1.</p>
+
+<p><strong>第五步：</strong></p>
+
+<p>两天后，你想看看我的网站是否有更新，通过在B导航网站的链接访问我的网站首页，因据上次访问时间，已过了2天，早已超过了30分钟，此时B导航网站带来的visit覆盖你上次最终的流量来源归属（A网站的Banner)，所以此次的visit归属到B导航网站。发现还没有更新，你离开了网站。此时网站的总visit = 5。</p>
+
+<h3 id="section-1">参考资料</h3>
+
+<ul>
+  <li><a href="http://www.wachina.net/index.php/googleanalyticsmarketingchannnellogics" title="如何解读Google Analytics渠道流量数据">《如何解读Google Analytics渠道流量数据(一)：流量是怎么算出来的》</a></li>
+  <li><a href="http://analytics.blogspot.com/2011/08/update-to-sessions-in-google-analytics.html" title="Update to Sessions in Google Analytics">《Update to Sessions in Google Analytics》</a></li>
+</ul>
+
+<h4 id="section-2">问题：</h4>
+<ol>
+  <li>google analytics如何界定一次会话，是不是一个visit代表一个session？</li>
+  <li>在两次PV时间间隔未超过30分钟的情况，换了流量来源再访问，visit+1,是不是重新开启了一次会话？</li>
+  <li>isit的归属是跟转化是一致的吗？</li>
+  <li>什么情况下才叫流量来源覆盖？</li>
+</ol>
+
+            </div>
+            
+    		<div class="likepost">
+    			<h2>相关日志</h2>
+    			<ul>
+    				
+    				<li><a href="/%E7%BD%91%E7%AB%99%E5%88%86%E6%9E%90/2013/01/31/ga-visit.html">GA网站分析visit统计规则与流量来源覆盖原则</a></li>
+    				
+    			</ul>
+    		</div>
+			<div id="disqus_thread"></div>
+            <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'fuweiyi'; // required: replace example with your forum shortname
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</div>
+	</div>
+		<div class="blank20"></div>
+                <div class="footer radius">
+                        &copy; 傅唯一 2012-2013 Powered by GitHub <a href="https://github.com/mojombo/jekyll" target="_blank">jekyll</a>
+                </div>
+		<div style="display:none;">
+		<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F02dd3320304085dfa94f6456bb126ed4' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		</div>
+        </div>
+</body>
+</html>
+
+

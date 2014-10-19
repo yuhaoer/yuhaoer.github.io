@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>【工具】为图片创建指定大小的等比例缩略图_Python_ResizeImage 育好儿</title>
+        <meta name="keywords" content="软件,缩略图,Python,resizeimageonlyfu,fuweiyi,blog,logs,博客"/>
+        <meta name="description" content="傅唯一的博客，学习写作与工作生活记录" />
+		<meta name="baidu-site-verification" content="7P3zJDwukPDw2LOy" />
+        <link href="/css/common.css" rel="stylesheet" type="text/css" />
+        <link href="/prettify/prettify.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="/favicon.ico"/>
+		<link rel="bookmark" href="/favicon.ico"/>
+		<script type="text/javascript" src="/jquery.js"></script>
+		<script type="text/javascript" src="/prettify/prettify.js"></script>
+</head>
+<body>
+        <div class="wrap">
+		<div class="header radius black">
+			<h2><a href=""></a></h2>
+            <ul>
+            <li>
+                首页
+            </li>
+            <li>
+                线下活动
+            </li>
+            <li>
+                产品发布
+            </li>
+            <li>
+                热门问题
+            </li>
+            </ul>
+			<span class="right">如果您没有OUT，请使用Firefox,Chrome,Safari浏览本站</span>
+		</div>
+
+	<div class="main">
+		<div class="postbox radius">
+            <h2 class="first_title">【工具】为图片创建指定大小的等比例缩略图_Python_ResizeImage</h2>
+            <p class="posted_info">
+                posted by 傅唯一 on 2013-03-11 分类: <a href="/categorys/Python.html">Python</a>
+            </p>
+            <div class="postcontent">
+			<p>
+经常要将手机拍摄的照片上传，但照片一般都比较大，所以每次都要修改一下大小，机器里只装有Photoshop，确实不愿意打开它来做这件事，于是就萌发了写一个简单方便修改图片大小的程序。Python非常适合做这件事。
+</p>
+<h2 class="content_h2">
+ResizeImage
+</h2>
+<h3>
+运行截图：
+</h3>
+<p>
+<img src="/images/201303/031102.jpg" alt="运行截图" />
+</p>
+<h3>
+介绍：
+</h3>
+<p>
+ResizeImage可以创建图片的缩略图，该程序需要输入3到4个参数（每个参数用空格进行分隔），它们的意思分别是：
+</p>
+<pre class="prettyprint">
+1、图片目录或是图片的路径
+2、需生成图片的宽，整数
+3、需生成图片的高，整数
+4、如果第1个参数是图片目录，可以使用这么4个参数来过滤图片的类型，比如，只想对目录下所有的gif图片进行缩略图的创建。该参数包括jpg,jpeg,gif和png。如果不指定它，默认的值为jpg。意为着，程序会将该目录下所有格式为jpg的图片进行缩略图的创建。
+</pre>
+<h3>
+使用方法：
+</h3>
+<pre class="prettyprint">
+1、运行resizeImage.exe
+2、将图片或图片目录拖到程序界面（命令行）里。当然也可以手动输入图片或图片目录所在路径
+3、输入需要生成图片的宽高
+</pre>
+<h3>
+示例：
+</h3>
+<pre class="content_pre">
+1、将图片目录d:\pics下所有格式为jpg的图片，创建宽为300或高为300的缩略图
+Enter path width height: d:\pics 300 300
+
+2、将图片目录d:\pics下所有格式为gif的图片，创建宽为300或高为300的缩略图
+Enter path width height: d:\pics 300 300 gif
+
+3、将图片d:\pics\ex.jpg，创建宽为300或高为300的缩略图
+Enter path width height: d:\pics\ex.jpg 300 300
+
+PS：创建的缩略图为什么是宽为300或是高为300，（300这个数值由您输入的决定，这里只是引用上面例子中的数值）
+
+因为程序会根据图片比例进行自动的等比例缩放，所以，可能是宽被控制为300，也可能是高被控制为300
+</pre>
+<h3>
+技巧，关于缩略时的宽高取舍
+</h3>
+<p>
+程序在创建缩略图的时候，永远是按等比例来进行，这里就涉及到创建缩略图的时候，是取目标宽为基准，还是取目标高为基准。
+</p>
+<p>
+程序的做法是：永远以小值为基准。如：输入宽高分别为：300 500，那么创建的缩略图将是300宽为基准，进行等比例缩略。如果输入宽高分别为：500 300，那么创建的缩略图就将是以300高为基准。如果宽高相等，500 500，那么将根据图片实际的宽高，以长的一边为基准，如：原始图片宽高为2592*1936，若输入500 500，那创建缩略图大小为：500*373，反之同样成立
+</p>
+<h3>
+下载：<a href="/files/ResizeImageV0.1.rar" style="color:#ff0000;">点击这里</a>
+</h3>
+<script type="text/javascript">
+jQuery(function($){
+	window.prettyPrint && prettyPrint();
+});
+</script>
+            </div>
+            
+    		<div class="likepost">
+    			<h2>相关日志</h2>
+    			<ul>
+    				
+    			</ul>
+    		</div>
+			<div id="disqus_thread"></div>
+            <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'fuweiyi'; // required: replace example with your forum shortname
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</div>
+	</div>
+		<div class="blank20"></div>
+                <div class="footer radius">
+                        &copy; 傅唯一 2012-2013 Powered by GitHub <a href="https://github.com/mojombo/jekyll" target="_blank">jekyll</a>
+                </div>
+		<div style="display:none;">
+		<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F02dd3320304085dfa94f6456bb126ed4' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		</div>
+        </div>
+</body>
+</html>
+
+

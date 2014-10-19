@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>github搭建blog基本操作 育好儿</title>
+        <meta name="keywords" content="github,blogonlyfu,fuweiyi,blog,logs,博客"/>
+        <meta name="description" content="傅唯一的博客，学习写作与工作生活记录" />
+		<meta name="baidu-site-verification" content="7P3zJDwukPDw2LOy" />
+        <link href="/css/common.css" rel="stylesheet" type="text/css" />
+        <link href="/prettify/prettify.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="/favicon.ico"/>
+		<link rel="bookmark" href="/favicon.ico"/>
+		<script type="text/javascript" src="/jquery.js"></script>
+		<script type="text/javascript" src="/prettify/prettify.js"></script>
+</head>
+<body>
+        <div class="wrap">
+		<div class="header radius black">
+			<h2><a href=""></a></h2>
+            <ul>
+            <li>
+                首页
+            </li>
+            <li>
+                线下活动
+            </li>
+            <li>
+                产品发布
+            </li>
+            <li>
+                热门问题
+            </li>
+            </ul>
+			<span class="right">如果您没有OUT，请使用Firefox,Chrome,Safari浏览本站</span>
+		</div>
+
+	<div class="main">
+		<div class="postbox radius">
+            <h2 class="first_title">github搭建blog基本操作</h2>
+            <p class="posted_info">
+                posted by 傅唯一 on 2013-01-10 分类: <a href="/categorys/github.html">github</a>
+            </p>
+            <div class="postcontent">
+			<p>首先，你得安装好<a href="http://git-scm.com/book/en/Getting-Started-Installing-Git" target="_blank">git</a>，然后建立你的主目录，里面需包含一些文件及文件夹</p>
+<h2 class="content_h2">
+基本文件结构
+</h2>
+<p>
+<pre>
+	/base
+		|-- _config.yml  //配置文件
+		|-- _layouts     //模板目录
+		|-- index.html   //首页文件
+		
+</pre>
+</p>
+<p>
+其实里面除了_config.yml是必须的，其它的都不是，你完全可以用其它的名字。当然页面都是静态的，可以使用html或是markdown格式的文件。
+</p>
+<h2 class="content_h2">
+_config.yml内容
+</h2>
+<p>
+_config.yml有许多的设置，但基本上都可以使用它的默认设置，不用你写，但baseurl是必须指定的，因为它得确认你的项目目录，写法如下：
+</p>
+<p>
+<pre>
+	baseurl: /你的目录
+</pre>
+</p>
+<p>
+这样写是在你使用github的链接地址访问的情况，如果你有域名，那这里就只需要/，而不要带你的目录了
+</p>
+<p>
+关于_config.yml的其它设置，请看<a href="https://github.com/mojombo/jekyll/wiki/Configuration" target="_blank">官方</a>
+</p>
+<p>
+关于基本的操作，可以查看<a href="http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html" target="_blank">搭建一个免费的，无限流量的Blog</a>
+</p>
+<h2 class="content_h2">
+git 发布基本命令
+</h2>
+<ul>
+	<li>进入根目录</li>
+	<li>初始化该目录：$ git init</li>
+	<li>创建一个没有父节点的分支gh-pages：$ git checkout --orphan gh-pages</li>
+	<li>把内容加入到本地库里：$ git add .（点代表所有文件，你还可以针对某一个文件进行，把.换成路径和文件名就可以了）</li>
+	<li>$ git commit -m "first post"</li>
+	<li>推送到github：$ git remote add origin https://github.com/你github上的名字/你的项目名字.git（这句只用执行一次）</li>
+	<li>$ git push origin gh-pages</li>
+</ul>
+<h2 class="content_h2">
+git 克隆命令
+</h2>
+<ul>
+	<li>进入根目录</li>
+	<li>$ git pull https://github.com/你github上的名字/你的项目名字.git</li>
+</ul>
+<p>
+上传完后，需要等待10分钟左右才能正常访问，但实际上要不了10分钟。
+</p>
+
+            </div>
+            
+    		<div class="likepost">
+    			<h2>相关日志</h2>
+    			<ul>
+    				
+    				<li><a href="/github/2014/09/22/github-and-jekyll-resources.html">Jekyll和Github资源汇总</a></li>
+    				
+    				<li><a href="/github/2013/01/25/bind-domain.html">基于GitHub搭建免费无限流量blog--绑定域名</a></li>
+    				
+    				<li><a href="/github/2013/01/21/a-github-pages-qiang-hou.html">github pages被墙，目前的应对方式</a></li>
+    				
+    				<li><a href="/github/2013/01/10/k-github-pages-build-failed.html">关于github pages构建失败</a></li>
+    				
+    				<li><a href="/github/2013/01/10/jekyll-category.html">jekyll为文章设置分类及相关文章读取</a></li>
+    				
+    			</ul>
+    		</div>
+			<div id="disqus_thread"></div>
+            <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'fuweiyi'; // required: replace example with your forum shortname
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</div>
+	</div>
+		<div class="blank20"></div>
+                <div class="footer radius">
+                        &copy; 傅唯一 2012-2013 Powered by GitHub <a href="https://github.com/mojombo/jekyll" target="_blank">jekyll</a>
+                </div>
+		<div style="display:none;">
+		<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F02dd3320304085dfa94f6456bb126ed4' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		</div>
+        </div>
+</body>
+</html>
+
+

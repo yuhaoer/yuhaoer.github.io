@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>关于获取浏览器窗口可见高宽的问题 育好儿</title>
+        <meta name="keywords" content="javascript,documentElement,document,body,clientHeight,clientWidthonlyfu,fuweiyi,blog,logs,博客"/>
+        <meta name="description" content="傅唯一的博客，学习写作与工作生活记录" />
+		<meta name="baidu-site-verification" content="7P3zJDwukPDw2LOy" />
+        <link href="/css/common.css" rel="stylesheet" type="text/css" />
+        <link href="/prettify/prettify.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="/favicon.ico"/>
+		<link rel="bookmark" href="/favicon.ico"/>
+		<script type="text/javascript" src="/jquery.js"></script>
+		<script type="text/javascript" src="/prettify/prettify.js"></script>
+</head>
+<body>
+        <div class="wrap">
+		<div class="header radius black">
+			<h2><a href=""></a></h2>
+            <ul>
+            <li>
+                首页
+            </li>
+            <li>
+                线下活动
+            </li>
+            <li>
+                产品发布
+            </li>
+            <li>
+                热门问题
+            </li>
+            </ul>
+			<span class="right">如果您没有OUT，请使用Firefox,Chrome,Safari浏览本站</span>
+		</div>
+
+	<div class="main">
+		<div class="postbox radius">
+            <h2 class="first_title">关于获取浏览器窗口可见高宽的问题</h2>
+            <p class="posted_info">
+                posted by 傅唯一 on 2014-04-08 分类: <a href="/categorys/javascript.html">javascript</a>
+            </p>
+            <div class="postcontent">
+			<p>
+这是一个很悲剧的问题，浏览器太多的悲剧。--）
+</p>
+<p>
+我们知道，获取浏览器窗口可见区域的高(宽同理)可以用
+</p>
+<pre class="prettyprint lang-javascript">
+document.documentElement.clientHeight
+document.body.clientHeight
+</pre>
+<p>
+   为什么有两个，很显然，IE和其它的浏览器有点区别。但这不仅仅是IE的区别，这里还有个特别的情况，就是文档的doctype，当文档有定义doctype时，可见区域的高需要用document.documentElement.clientHeight，如果没有，则要用document.body.clientHeight
+</p>
+<pre class="prettyprint lang-javascript">
+document.documentElement.clientHeight  //有doctype
+document.body.clientHeight  //无doctype
+</pre>
+<p>
+    这样子，看上去没什么问题了，但有一天，我根据这样的判断来测试amazon.com和jomashop.com的首页是，却发现，它们同时有doctype，但amazon的可见区域得用documentElement.clientHeight，而jomashop的可见区域得用document.body.clientHeight。
+</p>
+<p>
+    为啥？不懂，查了一下w3schools.com，发现有这样一段
+</p>
+<h2>Window Size</h2>
+<p>
+Three different properties can be used to determine the size of the browser window (the browser viewport, NOT including toolbars and scrollbars).
+</p>
+<p>
+For Internet Explorer, Chrome, Firefox, Opera, and Safari:
+</p>
+<pre class="prettyprint lang-javascript">
+window.innerHeight - the inner height of the browser window
+window.innerWidth - the inner width of the browser window
+</pre>
+<p>
+For Internet Explorer 8, 7, 6, 5:
+</p>
+<pre class="prettyprint lang-javascript">
+document.documentElement.clientHeight
+document.documentElement.clientWidth
+</pre>
+<p>
+or
+</p>
+<pre class="prettyprint lang-javascript">
+document.body.clientHeight
+document.body.clientWidth
+</pre>
+<p>
+说明，这里还有一种方法来获取可见区域的高，就是window.innerHeight。经测试发现window.innerHeight在amazon和jomashop上获取的值是相同的，所以可以这样调整一下，也就是最终的获取方法：
+</p>
+<pre class="prettyprint lang-javascript">
+var w=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;
+var h=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;
+</pre>
+<script type="text/javascript">
+jQuery(function($){
+    window.prettyPrint && prettyPrint();
+});
+</script>
+            </div>
+            
+    		<div class="likepost">
+    			<h2>相关日志</h2>
+    			<ul>
+    				
+    				<li><a href="/javascript/2014/04/08/a-javascript-documentElement-document-body-clientHeight.html">关于获取浏览器窗口可见高宽的问题</a></li>
+    				
+    				<li><a href="/javascript/2013/12/05/a-javascript-setInterval-firefox-chrome-tab-bug.html">setInterval在firefox和chrome切换标签时出现的混乱问题及解决办法</a></li>
+    				
+    				<li><a href="/javascript/2013/09/30/a-javascript-color-gradient.html">Javascript，颜色渐变效果的处理</a></li>
+    				
+    				<li><a href="/javascript/2013/07/24/a-javascript-word-scroll.html">js，关于无缝滚动，文字篇</a></li>
+    				
+    				<li><a href="/javascript/2013/04/10/a-javascript-jquery-drag-sort.html">基于JQuery的列表拖动排序</a></li>
+    				
+    			</ul>
+    		</div>
+			<div id="disqus_thread"></div>
+            <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'fuweiyi'; // required: replace example with your forum shortname
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</div>
+	</div>
+		<div class="blank20"></div>
+                <div class="footer radius">
+                        &copy; 傅唯一 2012-2013 Powered by GitHub <a href="https://github.com/mojombo/jekyll" target="_blank">jekyll</a>
+                </div>
+		<div style="display:none;">
+		<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F02dd3320304085dfa94f6456bb126ed4' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		</div>
+        </div>
+</body>
+</html>
+
+

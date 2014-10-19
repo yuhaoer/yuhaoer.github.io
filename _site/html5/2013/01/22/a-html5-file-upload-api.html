@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>HTML5 file api 实现上传进度条 育好儿</title>
+        <meta name="keywords" content="HTML5,file api,上传,进度条onlyfu,fuweiyi,blog,logs,博客"/>
+        <meta name="description" content="傅唯一的博客，学习写作与工作生活记录" />
+		<meta name="baidu-site-verification" content="7P3zJDwukPDw2LOy" />
+        <link href="/css/common.css" rel="stylesheet" type="text/css" />
+        <link href="/prettify/prettify.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="/favicon.ico"/>
+		<link rel="bookmark" href="/favicon.ico"/>
+		<script type="text/javascript" src="/jquery.js"></script>
+		<script type="text/javascript" src="/prettify/prettify.js"></script>
+</head>
+<body>
+        <div class="wrap">
+		<div class="header radius black">
+			<h2><a href=""></a></h2>
+            <ul>
+            <li>
+                首页
+            </li>
+            <li>
+                线下活动
+            </li>
+            <li>
+                产品发布
+            </li>
+            <li>
+                热门问题
+            </li>
+            </ul>
+			<span class="right">如果您没有OUT，请使用Firefox,Chrome,Safari浏览本站</span>
+		</div>
+
+	<div class="main">
+		<div class="postbox radius">
+            <h2 class="first_title">HTML5 file api 实现上传进度条</h2>
+            <p class="posted_info">
+                posted by 傅唯一 on 2013-01-22 分类: <a href="/categorys/HTML5.html">HTML5</a>
+            </p>
+            <div class="postcontent">
+			<p>
+HTML5中实现上传进度条的显示，基本上都要基于AJAX，在HTML5的规范中，XMLHttpRequest有了新的版本XMLHttpRequest Level 2，它提供了不少新的特性，其中HTML5 Progress Event规范提供了显示上传进度的相关信息
+</p>
+<pre class="content_pre">
+total – 总的字节数
+loaded – 到目前为止上传的字节数
+lengthComputable – 可计算的已上传字节数
+</pre>
+<p>
+这样子，只需要为XMLHttpRequest.upload添加上progress事件的监听，就可以利用total和loaded计算出上传的字节百分比，从而实现上传进度的显示。
+</p>
+<pre class="content_pre">
+var _upload=new XMLHttpRequest();
+_upload.upload.addEventListener('progress',uploadProgress,false);
+</pre>
+<p>
+该句代码的意思即为，触发progress事件时，执行uploadProgress方法。
+</p>
+<pre class="content_pre">
+function uploadProgress(evt){
+	if(evt.lengthComputable){
+		var percentComplate=Math.round(evt.loaded*100/evt.total); //上传字节数的百分比
+	}
+}
+</pre>
+<p>
+得到这个百分比，就可以直接显示上传进度的百分比，也可以根据数值显示制作进度条了。
+</p>
+<p>
+关于XMLHttpRequest Level 2，可参考http://www.w3.org/TR/XMLHttpRequest2/#event-xhr-loadstart
+</p>
+<p>
+HTML5 Progress Event返回的3个值，可以参考：http://dvcs.w3.org/hg/progress/raw-file/tip/Overview.html
+</p>
+            </div>
+            
+    		<div class="likepost">
+    			<h2>相关日志</h2>
+    			<ul>
+    				
+    			</ul>
+    		</div>
+			<div id="disqus_thread"></div>
+            <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'fuweiyi'; // required: replace example with your forum shortname
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</div>
+	</div>
+		<div class="blank20"></div>
+                <div class="footer radius">
+                        &copy; 傅唯一 2012-2013 Powered by GitHub <a href="https://github.com/mojombo/jekyll" target="_blank">jekyll</a>
+                </div>
+		<div style="display:none;">
+		<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F02dd3320304085dfa94f6456bb126ed4' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		</div>
+        </div>
+</body>
+</html>
+
+

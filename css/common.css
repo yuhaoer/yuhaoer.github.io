@@ -1,6 +1,6 @@
 body {
-    /*background-color: #ededed;*/
-    background: #c6e5f2 url(/images/spriteme2.png) no-repeat center top;
+    background-color: #ededed;
+    /*background: #c6e5f2 url(/images/spriteme2.png) no-repeat center top;*/
     background-position: -79px -10px;
     padding: 0px;
     margin: 0px;

@@ -1,12 +1,15 @@
 body {
+
+    /*background: #c6e5f2 url(/images/spriteme2.png) no-repeat center top;
+    background-position: -79px -10px;*/
+
     background-color: #ededed;
-    /*background: #c6e5f2 url(/images/spriteme2.png) no-repeat center top;*/
-    /*background-position: -79px -10px;*/
     padding: 0px;
     margin: 0px;
     font-family: "Monaco", "Hiragino Sans GB", "Microsoft YaHei", Trebuchet, "Trebuchet MS", Tahoma, "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
     word-spacing: 1px;
 }
+
 img {
     border: 0px;
 }
@@ -35,7 +38,7 @@ img {
     height: 20px;
 }
 .wrap {
-    width: 1080px;
+    width: 980px;
     margin: 0 auto;
 }
 .header {

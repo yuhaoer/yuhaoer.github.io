@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }} 育好儿</title>
+    <meta name="keywords" content="{{  page.keywords }}onlyfu,fuweiyi,blog,logs,博客" />
+    <meta name="description" content="傅唯一的博客，学习写作与工作生活记录" />
+    <meta name="baidu-site-verification" content="7P3zJDwukPDw2LOy" />
+    <link href="{{ site:url }}/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/prettify/prettify.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="bookmark" href="/favicon.ico" />
+    <script type="text/javascript" src="/jquery.js"></script>
+    <script type="text/javascript" src="/prettify/prettify.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header radius black">
+            <h2>
+                <a href="{{ site:url  }}"></a>
+            </h2>
+            <span class="right">如果您没有OUT，请使用Firefox,Chrome,Safari浏览本站</span>
+        </div>
+        <div class="main">
+            <div class="content radius left">
+                {{ content}}
+            </div>
+            <div class="sidebar left">
+                {% include sidebar.html %} {% include side_categorys.html %} {% include side_links.html %}
+            </div>
+        </div>
+        <div class="blank20"></div>
+        <div class="footer radius">
+            &copy; 傅唯一 2012-2013 Powered by GitHub <a href="https://github.com/mojombo/jekyll" target="_blank">jekyll</a>
+        </div>
+        <div style="display:none;">
+            <script type="text/javascript">
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F02dd3320304085dfa94f6456bb126ed4' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -7,7 +7,6 @@ body {
     font-family: "Monaco", "Hiragino Sans GB", "Microsoft YaHei", Trebuchet, "Trebuchet MS", Tahoma, "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
     word-spacing: 1px;
 }
-
 img {
     border: 0px;
 }
@@ -18,14 +17,18 @@ img {
     float: right;
 }
 .radius {
-
     background: #fff;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
- /*
+    /*
     border-bottom: 1px solid #E4E5E7;
     border-radius: 5px 5px 5px 5px;
     border-right: 1px solid #E4E5E7;
     box-shadow: 1px 1px 2px rgba(102, 102, 102, 0.1);*/
+}
+.container {
+    width: 980px;
+    margin: auto;
+    position: relative;
 }
 .blank10 {
     clear: both;
@@ -41,6 +44,7 @@ img {
     width: 980px;
     margin: 0 auto;
 }*/
+
 .header {
     width: 100%;
     height: 100px;
@@ -73,16 +77,13 @@ img {
     font-weight: 700px;
     width: 190px;
 }
-
-.header ul li{
+.header ul li {
     float: left;
     display: inline;
 }
 .black {
-   /* background-color: #3e3e3e;*/
-
+    /* background-color: #3e3e3e;*/
 }
-
 #main {
     width: 980px;
     margin: 10px auto;
@@ -185,7 +186,6 @@ h2.first_title a:hover {
 .page:hover {
     color: #009900;
 }
-
 #main h3 {
     padding: 0px;
     margin: 0px;
@@ -210,7 +210,6 @@ h2.first_title a:hover {
 .index_lists h4 a {
     color: #08c;
     /*color: #036;*/
-    
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
@@ -238,14 +237,14 @@ h2.first_title a:hover {
     font-size: 12px;
 }
 .index_lists .index_img {
-float: left;
-margin: 0px 10px 10px 0px;
-width: 200px;
-height: 160px;
-overflow: hidden;
-background-color: #fefefe;
-border: 1px solid #ccc;
-border-radius: 5px 5px 5px 5px;
+    float: left;
+    margin: 0px 10px 10px 0px;
+    width: 200px;
+    height: 160px;
+    overflow: hidden;
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 5px 5px;
 }
 .index_ul {} .index_ul li {
     height: 30px;
@@ -337,7 +336,7 @@ border-radius: 5px 5px 5px 5px;
     width: 230px;
 }
 .footer {
-/*    clear: both;*/
+    /*    clear: both;*/
     width: 100%;
     height: 50px;
     line-height: 50px;
@@ -383,17 +382,56 @@ border-radius: 5px 5px 5px 5px;
 .linkorg {
     color: #ee7621;
 }
-
-.ep-pages{padding:10px 12px;clear:both;text-align:center;
-font-family:Arial, "\5B8B\4F53", sans-serif;font-size:14px;vertical-align:top} 
-.ep-pages a, .ep-pages span{display:inline-block;height:23px;line-height:23px;padding:0 8px;
-margin:5px 1px 0 0;background:#fff;border:1px solid #e5e5e5;overflow:hidden;vertical-align:top} 
-.ep-pages a:hover{background:#cc1b1b;border:1px solid #cc1b1b;text-decoration:none} 
-.ep-pages a, .ep-pages a:visited{color:#252525} 
-.ep-pages a:hover, .ep-pages a:active{color:#ffffff} 
-.ep-pages .current{background:#cc1b1b;border:1px solid #cc1b1b;color:#fff} 
-.ep-pages a.current, .ep-pages a.current:visited{color:#ffffff} 
-.ep-pages a.current:hover, .ep-pages a.current:active{color:#ffffff} 
-.ep-pages-ctrl{font-family:"\5B8B\4F53", sans-serif;font-weight:bold;font-size:16px} 
-.ep-pages-e5e5e5{color:#e5e5e5} 
-.ep-pages-all{font-size:12px;vertical-align:top} 
+.ep-pages {
+    padding: 10px 12px;
+    clear: both;
+    text-align: center;
+    font-family: Arial, "\5B8B\4F53", sans-serif;
+    font-size: 14px;
+    vertical-align: top
+}
+.ep-pages a, .ep-pages span {
+    display: inline-block;
+    height: 23px;
+    line-height: 23px;
+    padding: 0 8px;
+    margin: 5px 1px 0 0;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    vertical-align: top
+}
+.ep-pages a:hover {
+    background: #cc1b1b;
+    border: 1px solid #cc1b1b;
+    text-decoration: none
+}
+.ep-pages a, .ep-pages a:visited {
+    color: #252525
+}
+.ep-pages a:hover, .ep-pages a:active {
+    color: #ffffff
+}
+.ep-pages .current {
+    background: #cc1b1b;
+    border: 1px solid #cc1b1b;
+    color: #fff
+}
+.ep-pages a.current, .ep-pages a.current:visited {
+    color: #ffffff
+}
+.ep-pages a.current:hover, .ep-pages a.current:active {
+    color: #ffffff
+}
+.ep-pages-ctrl {
+    font-family: "\5B8B\4F53", sans-serif;
+    font-weight: bold;
+    font-size: 16px
+}
+.ep-pages-e5e5e5 {
+    color: #e5e5e5
+}
+.ep-pages-all {
+    font-size: 12px;
+    vertical-align: top
+}

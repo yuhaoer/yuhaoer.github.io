@@ -55,10 +55,9 @@ cursor: default;
 .nav-item {
 float: left;
 color: #3f3f3f;
-padding: 10px 0 ;
+padding: 0 ;
 margin: 0;
 font-size: 16px;
-width: 100px;
 box-sizing: border-box;
 text-align: center;
 }

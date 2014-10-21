@@ -2,78 +2,59 @@
 layout: default
 title: 
 ---
+<div style="background-color:#fff;padding-left: 10px">
 <h2 class="first_title">
-	<a href="{{ site:url  }}/code/">*.* 查看我的代码 ***</a> 
+    <a href="{{ site:url  }}/code/">*.* 查看我的代码 ***</a>
 </h2>
 <p class="posted_info">全部是自己的东西，算是一种记录。如果觉得对你有点用，可以随便使用，如果觉得不好或很差，还希望能给于一定的指导</p>
-<div class="news">
-	<h3>日志数({{ paginator.total_posts}})</h3>
-	{% for post in paginator.posts %}
-	<div class="index_lists">
-
-		<div class="index_des">
-			<div class="index_img">
-				{% if post.img %}
-				<img src="{{ site:url }}/images/{{ post.img }}" alt="" />
-				{% endif %}
-			</div>
-                    <h4><a href="{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a></h4>
-            {{ post.description }}
+<h3>日志数({{ paginator.total_posts}})</h3>
+</div>
+{% for post in paginator.posts %}
+<div class="index_lists">
+    <div class="index_des">
+        <div class="index_img">
+            {% if post.img %}
+            <img src="{{ site:url }}/images/{{ post.img }}" alt="" />
+            {% endif %}
+        </div>
+        <h4>
+            <a href="{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
+        </h4>
+        {{ post.description }}
         <div class="info">
             {{post.author}}  发布于 {{ post.date | date:"%Y-%m-%d"  }}  [{{post.category}}]
         </div>
         <div class="blank10"></div>
-		</div>
-	</div>
-	{% endfor %}
-
-	<div class="index_page">
-        {% if paginator.previous_page %}
-			{% if paginator.previous_page == 1  %}
-	        &laquo;&nbsp;<a href="{{ site:url  }}/" class="page">Previous</a>
-			{% else  %}
-			&laquo;&nbsp;<a href="{{ site:url  }}/page{{ paginator.previous_page }}" class="page">Previous</a>
-			{% endif  %}
-        {% endif %}
-        {% if paginator.next_page %}
-        <a href="{{ site:url  }}/page{{ paginator.next_page  }}" class="page">Next</a>&nbsp;&raquo;
-        {% endif %}
     </div>
-
+</div>
+{% endfor %}
 <div class="ep-pages">
-<span class="ep-pages-e5e5e5">第{{paginator.page}}页/共{{paginator.total_pages}}页</span>
-<a href="/">第一页</a>
-{% if paginator.previous_page %}
+    <span class="ep-pages-e5e5e5">第{{paginator.page}}页/共{{paginator.total_pages}}页</span>
+    <a href="/">第一页</a>
+    {% if paginator.previous_page %}
 {% if paginator.previous_page == 1 %}
-<a href="/" class="current"><<前一页</a>
+    <a href="/" class="current">
+        <<前一页</a>
+            {% else %}
+            <a href="/page{{paginator.previous_page}}">
+                <<前一页</a>
+                    {% endif %}
 {% else %}
-<a href="/page{{paginator.previous_page}}"><<前一页</a>
-{% endif %}
-{% else %}
-<span><<前一页</span>
-{% endif %}
+                    <span>
+                        <<前一页</span>
+                            {% endif %}
 {% for count in (2..paginator.total_pages) limit:8 %}
 {% if count == paginator.page %}
-<span class="current-page">{{count}}</span>
-{% else %}
-<a href="/page{{count}}">{{count}}</a>
-{% endif %}
+                            <span class="current-page">{{count}}</span>
+                            {% else %}
+                            <a href="/page{{count}}">{{count}}</a>
+                            {% endif %}
 {% endfor %}
 
 {% if paginator.next_page %}
-<a href="/page{{paginator.next_page}}">后一页>></a>
-{% else %}
-<span>后一页>></span>
-{% endif %}
-<a href="/page{{paginator.total_pages}}">最后一页</a>
-</div>
-
-<div class="ep-pages"> 
-    <span class="ep-pages-e5e5e5">首页</span> <span class="ep-pages-ctrl ep-pages-e5e5e5">&lt;</span>
- <a href="#" target="_self" class="current">1</a> <a href="#" target="_self">2</a> <a href="#" target="_self">3</a>
- <span>...</span> <a href="#" target="_self" class="ep-pages-ctrl">&gt;</a> <a href="#" target="_self">尾页</a>
- <a href="#" target="_self" class="ep-pages-all">在本页阅读全文</a> 
-</div> 
-
-
-</div>
+                            <a href="/page{{paginator.next_page}}">后一页>></a>
+                            {% else %}
+                            <span>后一页>></span>
+                            {% endif %}
+                            <a href="/page{{paginator.total_pages}}">最后一页</a>
+ </div>

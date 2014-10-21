@@ -22,19 +22,17 @@
         </h2>
         <span class="right">如果您没有OUT，请使用Firefox,Chrome,Safari浏览本站</span>
     </div>
-    <div class="wrap">
-        <div class="main">
-            <div class="content radius left">
-                {{ content}}
-            </div>
-            <div class="sidebar left">
-                {% include sidebar.html %} {% include side_categorys.html %} {% include side_links.html %}
-            </div>
+    <div id="main">
+        <div class="content  left">
+            {{ content}}
         </div>
-        <div class="blank20"></div>
-        <div class="footer radius">
-            &copy; 傅唯一 2012-2013 Powered by GitHub <a href="https://github.com/mojombo/jekyll" target="_blank">jekyll</a>
+        <div class="sidebar left">
+            {% include sidebar.html %} {% include side_categorys.html %} {% include side_links.html %}
         </div>
+    </div>
+    <div class="footer radius">
+        &copy; 大熊 2012-2013 Powered by GitHub
+        <a href="https://github.com/mojombo/jekyll" target="_blank">jekyll</a>
     </div>
 </body>
 

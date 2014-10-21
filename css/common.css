@@ -9,6 +9,7 @@ body {
     margin: 0px;
     font-family: "Monaco", "Hiragino Sans GB", "Microsoft YaHei", Trebuchet, "Trebuchet MS", Tahoma, "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
     word-spacing: 1px;
+    border-top: 5px solid #00bb6f;
 }
 img {
     border: 0px;

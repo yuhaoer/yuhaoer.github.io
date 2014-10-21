@@ -30,6 +30,18 @@ img {
     margin: auto;
     position: relative;
 }
+
+.tag-area {
+position: relative;
+width: 100%;
+}
+.tag-container{
+width: 950px;
+height: 44px;
+position: relative;
+margin: auto;
+}
+
 .blank10 {
     clear: both;
     height: 10px;

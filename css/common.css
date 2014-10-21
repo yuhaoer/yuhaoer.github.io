@@ -32,13 +32,36 @@ img {
     position: relative;
 }
 
-.tag-area {
-
-}
 .tag-container{
 width: 980px;
 height: 40px;
 margin: auto;
+}
+
+#nav {
+width: 100%;
+height: 50px;
+overflow: hidden;
+}
+
+#nav ul {
+list-style: none;
+}
+
+.active-nav-item {
+border-bottom: 4px solid #FFA200;
+cursor: default;
+}
+
+.nav-item {
+float: left;
+color: #3f3f3f;
+padding: 13px 0 13px 0;
+margin: 0 20px 0 0;
+font-size: 16px;
+width: 100px;
+box-sizing: border-box;
+text-align: center;
 }
 
 .blank10 {
@@ -71,7 +94,7 @@ margin: auto;
     padding-left: 20px;
 }
 .header span {
-    
+
 /*    height: 50px;
     line-height: 50px;
     display: inline-block;

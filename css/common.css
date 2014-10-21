@@ -253,14 +253,15 @@ h2.first_title a:hover {
     font-family: "Microsoft YaHei", "SimHei ";
 }
 .index_lists h4 a {
-    color: #EA756A;
+    color: #00BB6F;
     /*color: #036;*/
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
 }
 .index_lists h4 a:hover {
-    color: #00BB6F;
+
+        color: #EA756A;
 }
 .index_lists h4 cite {
     float: right;

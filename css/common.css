@@ -31,7 +31,7 @@ img {
     margin: auto;
     position: relative;
     overflow: hidden;
-    border-bottom: 5px solid red;
+    border-bottom: 1px solid #E5E5E5;
 }
 .tag-container {
     width: 980px;

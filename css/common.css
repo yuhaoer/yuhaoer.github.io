@@ -51,6 +51,14 @@ img {
     float: left;
     margin:0 20px;
 }
+
+.top-nav-bar ul li a{
+font-size: 1.2em;
+font-weight: bold;
+color: #9f968e;
+letter-spacing: .2em;
+}
+}
 .active-nav-item {
     border-bottom: 4px solid #FFA200;
     cursor: default;

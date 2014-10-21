@@ -32,13 +32,11 @@ img {
 }
 
 .tag-area {
-position: relative;
-width: 100%;
+
 }
 .tag-container{
-width: 950px;
+width: 980px;
 height: 44px;
-position: relative;
 margin: auto;
 }
 

@@ -30,6 +30,7 @@ img {
     height: 60px;
     margin: auto;
     position: relative;
+overflow: hidden;
 }
 
 .tag-container{

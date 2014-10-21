@@ -1,8 +1,6 @@
 body {
-
     /*background: #c6e5f2 url(/images/spriteme2.png) no-repeat center top;
     background-position: -79px -10px;*/
-
     background-color: #F0F0F0;
     padding: 0px;
     margin: 0px;
@@ -87,7 +85,7 @@ img {
 
 #main {
     width: 980px;
-    margin: 5px auto;
+    margin: 10px auto;
     overflow: hidden;
 }
 .sidebar {

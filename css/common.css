@@ -488,8 +488,12 @@ font-weight: bold;
 border: 1px solid #085f3c;
 border-radius: .5em;
 cursor: pointer;
-color: red;
+color: #fff;
 box-shadow: 0 1px 1px rgba(255,255,255,0.1);
+}
+
+.mail-subscribe p{
+color: #fff;
 }
 
 input.subscribe-input {

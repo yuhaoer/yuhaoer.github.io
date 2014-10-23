@@ -140,9 +140,15 @@ img {
 /*end nav*/
 
 /*search*/
-.search{
-float: left;
+
+#header .search {
+position: relative;
+float: right;
+width: 230px;
+background: #DB6D4C;
 }
+
+
 /*end search*/
 /*************end 头部********************/
 

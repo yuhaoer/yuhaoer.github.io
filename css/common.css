@@ -479,6 +479,33 @@ color: #ea756a;
 text-shadow: 0 1px 1px #a34c44;
 }
 
+input.subscribe-btn {
+margin-top: .5em;
+background: #027446;
+padding: .3em .5em;
+font-size: 100%;
+font-weight: bold;
+border: 1px solid #085f3c;
+border-radius: .5em;
+cursor: pointer;
+color: #fff;
+box-shadow: 0 1px 1px rgba(255,255,255,0.1);
+}
+
+/*body, button, input, select, textarea {
+font-size: 15px;
+line-height: 1.72em;
+font-family: "mbtiTypo","Helvetica Neue","Helvetica","Hiragino Sans GB",'STHeiti','Hei','Microsoft YaHei',"Arial",sans-serif;
+color: #646464;
+}*/
+
+.sc-3 input {
+font-size: 15px;
+line-height: 1.72em;
+font-family: "mbtiTypo","Helvetica Neue","Helvetica","Hiragino Sans GB",'STHeiti','Hei','Microsoft YaHei',"Arial",sans-serif;
+color: #646464;
+}
+
 .footer {
     /*    clear: both;*/
     width: 100%;

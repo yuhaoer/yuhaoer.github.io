@@ -140,11 +140,10 @@ img {
 /*end nav*/
 
 /*search*/
-
 #header .search {
     position: relative;
     float: right;
-    width: 210px;
+    width: 100px;
     background: #DB6D4C;
 }
 /*end search*/

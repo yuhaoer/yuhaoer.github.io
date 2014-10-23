@@ -106,7 +106,7 @@ img {
 }
 .top-nav-bar ul li {
     float: left;
-    /*display: inline;*/
+    display: inline;
     margin-right: 1.5em;
     text-align: center;
 }
@@ -419,6 +419,27 @@ h2.first_title a:hover {
 .side_ads img {
     width: 230px;
 }
+
+
+/*************底部***************/
+
+#sub-container {
+font-size: 90%;
+line-height: 1.618em;
+color: #eee;
+padding: 2.5em 0;
+text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+background: url(img/sub_container_bg.jpg) 0 0 repeat-x #027446;
+}
+
+#header, #main, #sub-main, #footer {
+width: 980px;
+margin: 0 auto;
+padding: 0 20px;
+overflow: hidden;
+}
+
+
 .footer {
     /*    clear: both;*/
     width: 100%;
@@ -435,6 +456,9 @@ h2.first_title a:hover {
 .footer a:hover {
     color: #009900;
 }
+
+
+/*******end 底部**********/
 .directory {
     background-color: #e7e7e7;
     border: 1px solid #ccc;

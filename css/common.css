@@ -486,6 +486,11 @@ font-family: "mbtiTypo","Helvetica Neue","Helvetica","Hiragino Sans GB",'STHeiti
 color: #646464;
 }
 
+.site-brand {
+margin-top: 2.5em;
+text-align: right;
+}
+
 input.subscribe-btn {
 margin-top: .5em;
 background: #027446;

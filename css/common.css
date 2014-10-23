@@ -30,6 +30,77 @@ img {
     box-shadow: 1px 1px 2px rgba(102, 102, 102, 0.1);*/
 }
 
+
+.blank10 {
+    clear: both;
+    height: 10px;
+    font-size: 0px;
+    overflow: hidden;
+}
+.blank20 {
+    clear: both;
+    height: 20px;
+}
+/*.wrap {
+    width: 980px;
+    margin: 0 auto;
+}*/
+
+/***********头部**************/
+
+#header-container{
+    width: 100%;
+    height: 100px;
+    /*line-height: 60px;*/
+    /*border-radius: 0px 0px 5px 5px;*/
+}
+
+#header{
+    width: 980px;
+    height: 80px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#header h2 {
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 0;
+    font-size: 2em;
+}
+
+#logo {
+display: block;
+width: 165px;
+height: 45px;
+}
+
+.site-logo a {
+   /* background: url('../images/logo-new.png') no-repeat;*/
+    background-position: 0px 10px;
+    display: inline-block;
+    line-height: 50px;
+    height: 60px;
+    text-decoration: none;
+    color: #00BB6F;
+    font-weight: 700px;
+    width: 190px;
+    font-size: 2em;
+}
+
+.site-logo p {
+font-size: 85%;
+color: #675d53;
+letter-spacing: .3em;
+}
+
+
+/*导航条*/
 .top-nav-bar {
     /*height: 30px;*/
 }
@@ -62,79 +133,6 @@ letter-spacing: .1em;
     box-sizing: border-box;
     text-align: center;
 }
-.blank10 {
-    clear: both;
-    height: 10px;
-    font-size: 0px;
-    overflow: hidden;
-}
-.blank20 {
-    clear: both;
-    height: 20px;
-}
-/*.wrap {
-    width: 980px;
-    margin: 0 auto;
-}*/
-
-/***********头部**************/
-#header-container{
-    width: 100%;
-    height: 100px;
-    /*line-height: 60px;*/
-    /*border-radius: 0px 0px 5px 5px;*/
-}
-
-#header{
-    width: 980px;
-    height: 80px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-}
-
-
-#header h2 {
-    height: 50px;
-    line-height: 50px;
-    float: left;
-    margin: 0px;
-    padding: 0px;
-    padding-left: 0;
-    font-size: 2em;
-}
-
-#header ul li {
-    float: left;
-    display: inline;
-}
-
-#logo {
-display: block;
-width: 165px;
-height: 45px;
-}
-
-.site-logo a {
-   /* background: url('../images/logo-new.png') no-repeat;*/
-    background-position: 0px 10px;
-    display: inline-block;
-    line-height: 50px;
-    height: 60px;
-    text-decoration: none;
-    color: #00BB6F;
-    font-weight: 700px;
-    width: 190px;
-    font-size: 2em;
-}
-
-.site-logo p {
-font-size: 85%;
-color: #675d53;
-letter-spacing: .3em;
-}
-
-
 
 .top-nav-bar {
 position: absolute;
@@ -143,6 +141,7 @@ left: 25%;
 }
 .top-nav-bar ul li {
 float: left;
+display: inline;
 margin-right: 2em;
 text-align: center;
 }

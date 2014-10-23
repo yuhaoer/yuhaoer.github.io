@@ -135,14 +135,14 @@ img {
     top: 30px;
     left: 75%;*/
     float: right;
-    width:235px;
+    width:255px;
     background: #EA756A;
 }
 
 #header .search input {
 float: left;
 height: 40px;
-width: 180px;
+width: 160px;
 background: none;
 border: none;
 outline: none;

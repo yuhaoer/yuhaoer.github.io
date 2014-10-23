@@ -1,3 +1,14 @@
+::selection {
+color: #fff;
+background-color: #646464;
+}
+
+::-moz-selection
+{
+color: #fff;
+background-color: #646464;
+}
+
 body {
     /*background: #c6e5f2 url(/images/spriteme2.png) no-repeat center top;
     background-position: -79px -10px;*/
@@ -460,16 +471,13 @@ margin-right: 0;
 
 #sub-main h3 {
 font-size: 120%;
-line-height: 1.618em;
+line-height: 1.6em;
 color: #fff;
 letter-spacing: .1em;
 margin-bottom: .5em;
 }
 
-::selection {
-color: #fff;
-background-color: #646464;
-}
+
 .site-about  a {
 font-weight: bold;
 margin-left: 1em;
@@ -510,7 +518,7 @@ font-size: 100%;
 font-weight: bold;
 border: 1px solid #085f3c;
 border-radius: .5em;
-cursor: pointer;
+/*cursor: pointer;*/
 color: #eee;
 box-shadow: 0 1px 1px rgba(255,255,255,0.1);
 }

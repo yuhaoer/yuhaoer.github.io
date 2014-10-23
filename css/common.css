@@ -488,7 +488,7 @@ font-weight: bold;
 border: 1px solid #085f3c;
 border-radius: .5em;
 cursor: pointer;
-color: #fff;
+color: red;
 box-shadow: 0 1px 1px rgba(255,255,255,0.1);
 }
 

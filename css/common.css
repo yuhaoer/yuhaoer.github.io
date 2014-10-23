@@ -145,7 +145,7 @@ img {
     top: 30px;
     left: 75%;
     width:235px;
-    background: #DB6D4C;
+    background: #EA756A;
 }
 
 #header .search input {
@@ -160,6 +160,16 @@ font-size: 14px;
 font-size: 1.4rem;
 color: #fff;
 line-height: 14px;
+}
+
+#header .search button {
+    background: url("../images/com-sprite.png") no-repeat scroll 10px -30px rgba(0, 0, 0, 0);
+    border: 0 none;
+    cursor: pointer;
+    float: left;
+    height: 60px;
+    outline: 0 none;
+    width: 50px;
 }
 /*end search*/
 

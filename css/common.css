@@ -141,9 +141,9 @@ img {
 
 /*search*/
 #header .search {
-    position: relative;
-    float: right;
-    width: 210px;
+    position: absolute;
+    top: 30px;
+    left: 75%;
     background: #DB6D4C;
 }
 /*end search*/

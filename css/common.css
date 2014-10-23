@@ -93,8 +93,8 @@ img {
     color: #675d53;
     letter-spacing: .3em;
 }
-/*导航条*/
 
+/*导航条*/
 .active-nav-item {
     border-bottom: 4px solid #FFA200;
     cursor: default;
@@ -137,6 +137,13 @@ img {
     text-transform: uppercase;
     text-indent: -5px;
 }
+/*end nav*/
+
+/*search*/
+.search{
+float: left;
+}
+/*end search*/
 /*************end 头部********************/
 
 .black {

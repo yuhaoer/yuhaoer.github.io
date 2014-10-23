@@ -41,6 +41,15 @@ img {
     margin: 0 auto;
 }*/
 
+
+/*#header, #main, #sub-main, #footer {
+width: 980px;
+margin: 0 auto;
+padding: 0 20px;
+overflow: hidden;
+}*/
+
+
 /***********头部**************/
 
 #header-container {
@@ -432,12 +441,6 @@ text-shadow: 0 1px 1px rgba(0,0,0,0.4);
 background: url(../images/sub_container_bg.jpg) 0 0 repeat-x #027446;
 }
 
-/*#header, #main, #sub-main, #footer {
-width: 980px;
-margin: 0 auto;
-padding: 0 20px;
-overflow: hidden;
-}*/
 
 #sub-main {
 width: 980px;
@@ -463,20 +466,20 @@ letter-spacing: .1em;
 margin-bottom: .5em;
 }
 
-#sub-main a {
-color: #eee;
+
+.site-about  a {
+font-weight: bold;
+margin-left: 1em;
 }
 
+/*#sub-main a {
+color: #eee;
+}*/
 
 .site-about, .site-archives {
 margin-bottom: 1.5em;
 padding-bottom: 1.5em;
 background: url(../images/line_g.png) 0 bottom repeat-x transparent;
-}
-
-.site-about  a {
-font-weight: bold;
-margin-left: 1em;
 }
 
 #sub-main a:hover {

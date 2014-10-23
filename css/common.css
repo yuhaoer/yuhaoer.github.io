@@ -446,6 +446,13 @@ padding: 0 20px;
 overflow: hidden;
 }
 
+.sc-1, .sc-2, .sc-3 {
+width: 30.4%;
+float: left;
+margin-right: 4.4%;
+}
+
+
 .footer {
     /*    clear: both;*/
     width: 100%;

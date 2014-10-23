@@ -432,13 +432,19 @@ text-shadow: 0 1px 1px rgba(0,0,0,0.4);
 background: url(../images/sub_container_bg.jpg) 0 0 repeat-x #027446;
 }
 
-#header, #main, #sub-main, #footer {
+/*#header, #main, #sub-main, #footer {
+width: 980px;
+margin: 0 auto;
+padding: 0 20px;
+overflow: hidden;
+}*/
+
+#sub-main {
 width: 980px;
 margin: 0 auto;
 padding: 0 20px;
 overflow: hidden;
 }
-
 
 .footer {
     /*    clear: both;*/

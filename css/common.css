@@ -163,7 +163,7 @@ line-height: 14px;
 }
 
 #header .search button {
-    background: url("../images/com-sprite.png") no-repeat scroll 10px -30px rgba(0, 0, 0, 0);
+    background: url("../images/com-sprite.png") no-repeat scroll 10px -20px rgba(0, 0, 0, 0);
     border: 0 none;
     cursor: pointer;
     float: left;

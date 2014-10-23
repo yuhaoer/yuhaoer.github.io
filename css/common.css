@@ -455,6 +455,20 @@ margin-right: 4.4%;
 margin-right: 0;
 }
 
+#sub-main h3 {
+font-size: 120%;
+line-height: 1.618em;
+color: #fff;
+letter-spacing: .1em;
+margin-bottom: .5em;
+}
+
+.site-about, .site-archives {
+margin-bottom: 1.5em;
+padding-bottom: 1.5em;
+background: url(../images/line_g.png) 0 bottom repeat-x transparent;
+}
+
 .footer {
     /*    clear: both;*/
     width: 100%;

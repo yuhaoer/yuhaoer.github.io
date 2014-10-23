@@ -104,11 +104,21 @@ letter-spacing: .1em;
     font-size: 2em;
 }
 
+#header ul li {
+    float: left;
+    display: inline;
+}
+
+#logo {
+display: block;
+width: 165px;
+height: 60px;
+}
+
 .site-logo a {
    /* background: url('../images/logo-new.png') no-repeat;*/
     background-position: 0px 10px;
     display: inline-block;
-    padding-left: 0;
     line-height: 50px;
     height: 60px;
     text-decoration: none;
@@ -116,11 +126,6 @@ letter-spacing: .1em;
     font-weight: 700px;
     width: 190px;
     font-size: 2em;
-
-}
-#header ul li {
-    float: left;
-    display: inline;
 }
 
 .site-logo p {
@@ -129,11 +134,7 @@ color: #675d53;
 letter-spacing: .3em;
 }
 
-#logo {
-display: block;
-width: 165px;
-height: 30px;
-}
+
 
 .top-nav-bar {
 position: absolute;

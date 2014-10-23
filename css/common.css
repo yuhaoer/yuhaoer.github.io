@@ -58,8 +58,8 @@ img {
     height: 60px;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
     padding: 22px 20px;
+    overflow: hidden;
 }
 #header h2 {
     height: 50px;
@@ -93,8 +93,8 @@ img {
     color: #675d53;
     letter-spacing: .3em;
 }
-
 /*导航条*/
+
 .active-nav-item {
     border-bottom: 4px solid #FFA200;
     cursor: default;
@@ -112,7 +112,7 @@ img {
 .top-nav-bar {
     position: absolute;
     top: 30px;
-    left: 20%;
+    left: 25%;
 }
 .top-nav-bar ul li {
     float: left;
@@ -142,14 +142,13 @@ img {
 /*search*/
 
 #header .search {
-position: relative;
-float: right;
-width: 210px;
-background: #DB6D4C;
+    position: relative;
+    float: right;
+    width: 210px;
+    background: #DB6D4C;
 }
-
-
 /*end search*/
+
 /*************end 头部********************/
 
 .black {

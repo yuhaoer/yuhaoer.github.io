@@ -467,7 +467,9 @@ margin-bottom: .5em;
 color: #fff;
 }
 
-
+.site-archives ul li a {
+text-transform: uppercase;
+}
 .site-about, .site-archives {
 margin-bottom: 1.5em;
 padding-bottom: 1.5em;

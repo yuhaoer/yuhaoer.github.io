@@ -117,7 +117,7 @@ img {
 .top-nav-bar ul li {
     float: left;
     /*display: inline;*/
-    margin-right: 1em;
+    margin-right: 1.5em;
     text-align: center;
 }
 .top-nav-bar ul li a {

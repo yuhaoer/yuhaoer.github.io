@@ -475,10 +475,10 @@ font-weight: bold;
 margin-left: 1em;
 }
 
-/*#sub-main a {
+#sub-main a {
 color: #eee;
 }
-*/
+
 .site-about, .site-archives {
 margin-bottom: 1.5em;
 padding-bottom: 1.5em;

@@ -127,6 +127,12 @@ color: #675d53;
 letter-spacing: .3em;
 }
 
+#logo {
+display: block;
+width: 165px;
+height: 30px;
+}
+
 .top-nav-bar {
 position: absolute;
 top: 30px;

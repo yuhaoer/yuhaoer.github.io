@@ -466,7 +466,10 @@ letter-spacing: .1em;
 margin-bottom: .5em;
 }
 
-
+::selection {
+color: #fff;
+background-color: #646464;
+}
 .site-about  a {
 font-weight: bold;
 margin-left: 1em;
@@ -474,8 +477,8 @@ margin-left: 1em;
 
 /*#sub-main a {
 color: #eee;
-}*/
-
+}
+*/
 .site-about, .site-archives {
 margin-bottom: 1.5em;
 padding-bottom: 1.5em;

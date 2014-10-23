@@ -19,7 +19,7 @@
     <div id="header-container" class="radius black">
         <div id="header">
             <div class="site-logo">
-                    <a href="{{ site:url  }}" id="logo">育好儿</a>
+                <a href="{{ site:url  }}" id="logo">育好儿</a>
                 <p>读懂孩子 · 科学教养</p>
             </div>
             <div class="top-nav-bar">
@@ -38,6 +38,14 @@
                     </li>
                 </ul>
             </div>
+            <div class="search" id="top-search-bar">
+                <form method="GET" action="http://www.yuhaoer.com/search">
+                    <input type="text" name="s" autocomplete="off" value="">
+                    <button type="submit"></button>
+                </form>
+                <ul class="tip-ul hide"></ul>
+            </div>
+            <!-- search END -->
         </div>
     </div>
 

@@ -101,24 +101,6 @@ letter-spacing: .3em;
 
 
 /*导航条*/
-.top-nav-bar {
-    /*height: 30px;*/
-}
-.top-nav-bar ul {
-    list-style: none;
-}
-.top-nav-bar ul li {
-    float: left;
-    margin:0 20px;
-}
-
-.top-nav-bar ul li a{
-font-size: 1.2em;
-font-weight: bold;
-color: #9F968E;
-letter-spacing: .1em;
-}
-}
 .active-nav-item {
     border-bottom: 4px solid #FFA200;
     cursor: default;
@@ -145,6 +127,19 @@ display: inline;
 margin-right: 2em;
 text-align: center;
 }
+
+.top-nav-bar ul li {
+    float: left;
+    margin:0 20px;
+}
+
+.top-nav-bar ul li a{
+font-size: 1.2em;
+font-weight: bold;
+color: #9F968E;
+letter-spacing: .1em;
+}
+
 /*************end 头部********************/
 
 

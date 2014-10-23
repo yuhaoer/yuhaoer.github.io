@@ -463,6 +463,11 @@ letter-spacing: .1em;
 margin-bottom: .5em;
 }
 
+#sub-main a {
+color: #fff;
+}
+
+
 .site-about, .site-archives {
 margin-bottom: 1.5em;
 padding-bottom: 1.5em;

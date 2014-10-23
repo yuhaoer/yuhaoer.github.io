@@ -101,6 +101,7 @@ img {
 /*    position: absolute;
     top: 30px;
     left: 25%;*/
+    float: left;
 }
 .top-nav-bar ul li {
     float: left;

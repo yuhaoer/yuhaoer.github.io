@@ -469,7 +469,7 @@ padding-bottom: 1.5em;
 background: url(../images/line_g.png) 0 bottom repeat-x transparent;
 }
 
-.site-about div a {
+.site-about  a {
 font-weight: bold;
 margin-left: 1em;
 }

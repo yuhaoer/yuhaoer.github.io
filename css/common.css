@@ -58,6 +58,7 @@ img {
 #header{
     width: 980px;
     height: 80px;
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
     padding: 22px 20px;

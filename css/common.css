@@ -113,12 +113,11 @@ img {
     position: absolute;
     top: 30px;
     left: 25%;
-    width: 500px;
 }
 .top-nav-bar ul li {
     float: left;
     /*display: inline;*/
-    margin-right: 2em;
+    margin-right: 1em;
     text-align: center;
 }
 .top-nav-bar ul li a {

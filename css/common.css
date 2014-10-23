@@ -131,9 +131,10 @@ img {
 
 /*search*/
 #header .search {
-    position: absolute;
+/*    position: absolute;
     top: 30px;
-    left: 75%;
+    left: 75%;*/
+    float: right;
     width:235px;
     background: #EA756A;
 }

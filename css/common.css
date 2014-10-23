@@ -147,6 +147,20 @@ img {
     width:235px;
     background: #DB6D4C;
 }
+
+#header .search input {
+float: left;
+height: 60px;
+width: 160px;
+background: none;
+border: none;
+outline: none;
+padding: 0 10px;
+font-size: 14px;
+font-size: 1.4rem;
+color: #fff;
+line-height: 14px;
+}
 /*end search*/
 
 /*************end 头部********************/

@@ -55,17 +55,9 @@ img {
     margin: 0 auto;
     position: relative;
     padding: 22px 20px;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
-#header h2 {
-    height: 50px;
-    line-height: 50px;
-    float: left;
-    margin: 0px;
-    padding: 0px;
-    padding-left: 0;
-    font-size: 2em;
-}
+
 #logo {
     display: block;
     width: 165px;
@@ -75,9 +67,9 @@ img {
     width: 20.6%;
 }
 .site-logo a {
-    /* background: url('../images/logo-new.png') no-repeat;*/
+/*     background: url('../images/logo-new.png') no-repeat;
     background-position: 0px 10px;
-    display: inline-block;
+    display: inline-block;*/
     width: 190px;
     height: 60px;
     color: #00BB6F;

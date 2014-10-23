@@ -4,9 +4,9 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>{{ page.title }} 育好儿</title>
-    <meta name="keywords" content="{{  page.keywords }}onlyfu,fuweiyi,blog,logs,博客" />
-    <meta name="description" content="傅唯一的博客，学习写作与工作生活记录" />
-    <meta name="baidu-site-verification" content="7P3zJDwukPDw2LOy" />
+    <meta name="keywords" content="{{  page.keywords }}育好儿,早教,亲子早教,亲子教育,育儿经验" />
+    <meta name="description" content="育好儿，读懂孩子,科学教养" />
+    <link href="{{ site:url }}/css/reset.css" rel="stylesheet" type="text/css" />
     <link href="{{ site:url }}/css/common.css" rel="stylesheet" type="text/css" />
     <link href="/prettify/prettify.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -16,36 +16,35 @@
 </head>
 
 <body>
-    <div class="header radius black">
-        <div class="container">
-            <div class="logo">
+    <div id="header-container" class="radius black">
+        <div id="header">
+            <div class="site-logo">
                 <h2>
                     <a href="{{ site:url  }}">育好儿</a>
                 </h2>
+                <p>读懂孩子 ·科学教养</p>
             </div>
             <div class="top-nav-bar">
                 <ul class="menu">
-                    <li><a>妈妈说</a>
+                    <li>
+                        <a>妈妈说<em>notes</em></a>
                     </li>
-                    <li><a>推荐书单</a>
+                    <li>
+                        <a>推荐书单<em>notes</em></a>
                     </li>
-                    <li><a>宝贝推荐</a>
+                    <li>
+                        <a>宝贝推荐<em>notes</em></a>
                     </li>
-                    <li><a>消费指南</a>
+                    <li>
+                        <a>消费指南<em>notes</em></a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="tag-container">
-            <span></span>
-        </div>
-
-
     </div>
+
     <div id="main">
-        <div class="content left">
-            {{ content}}
-        </div>
+        <div class="content left">{{ content}}</div>
         <div class="sidebar right">
             {% include sidebar.html %} {% include side_categorys.html %} {% include side_links.html %}
         </div>

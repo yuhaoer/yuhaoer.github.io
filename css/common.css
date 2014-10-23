@@ -135,6 +135,17 @@ color: #9F968E;
 letter-spacing: .1em;
 }
 
+.top-nav-bar ul li a em {
+display: block;
+font-size: .55em;
+font-style: normal;
+line-height: 1em;
+font-weight: normal;
+letter-spacing: 0;
+text-transform: uppercase;
+text-indent: -5px;
+}
+
 /*************end 头部********************/
 
 

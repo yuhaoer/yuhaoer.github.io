@@ -55,7 +55,7 @@ img {
     margin: 0 auto;
     position: relative;
     padding: 22px 20px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 #header h2 {
     height: 50px;

@@ -807,11 +807,11 @@ display: inline-block;
 /*end 头条*/
 
 /*article*/
-.index_des:hover {
+.index_lists:hover {
 border-top: solid 2px #DB6D4C;
 }
 
-.article-bottom{
+.index_lists .article-bottom{
 padding:20px;
 height: 60px;
 }

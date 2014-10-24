@@ -647,7 +647,7 @@ color: #646464;
 
 
 .idx-news .cont .cont-left {
-width: 320px;
+width: 300px;
 padding-left: 10px;
 padding-right: 19px;
 float: left;
@@ -656,9 +656,14 @@ border-right: solid 1px #E0E0E0;
 }
 
 .idx-news .cont .cont-right {
-width: 320px;
+width: 300px;
 padding-left: 20px;
 padding-right: 10px;
 float: left;
 overflow: hidden;
+}
+
+.idx-news
+{
+    overflow: hidden;
 }

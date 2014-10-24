@@ -154,6 +154,18 @@ title:
             <a href="{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
         </h4>
         {{ post.description }}
+        <div class="article-bottom">
+            <div class="metatag">
+                <span class="date">{{ post.date | date:"%Y-%m-%d" }}</span>
+                {{ post.tags | array_to_sentence_string }}
+                <a href="" class="au" target="_blank">
+                    <span>{{post.author}}</span>
+                    <i></i>
+                </a>
+                <a href="" class="sor">{{post.category}}</a>
+            </div>
+        </div>
+
         <div class="info">
             {{post.author}} 发布于 {{ post.date | date:"%Y-%m-%d" }} [{{post.category}}]
         </div>

@@ -680,7 +680,8 @@ padding: 10px 0;
 border-bottom: solid 1px #fff;
 border-top: solid 1px #fff;
 }
-idx-news .cont .news-ul li .img {
+
+.idx-news .cont .news-ul li .img {
 float: left;
 width: 96px;
 }

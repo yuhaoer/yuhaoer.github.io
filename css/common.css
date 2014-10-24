@@ -666,6 +666,7 @@ overflow: hidden;
 .idx-news
 {
     overflow: hidden;
+    margin-bottom: 10px;
 }
 .idx-news .cont {
 padding: 15px 0px 0px 0px;

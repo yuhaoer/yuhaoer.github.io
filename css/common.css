@@ -688,3 +688,26 @@ width: 96px;
 .idx-news .cont .news-ul li .word {
 padding-left: 110px;
 }
+
+.idx-news .cont .news-ul li .word p {
+font-family: "microsoft yahei";
+font-size: 12px;
+color: #858585;
+line-height: 16px;
+height: 16px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
+.idx-news .cont .news-ul li:hover .word h3 a {
+color: #F37A55;
+}
+
+.idx-news .cont .news-ul li .word h3 a {
+font-family: "microsoft yahei";
+font-size: 14px;
+font-weight: bold;
+line-height: 34px;
+text-overflow: ellipsis;
+}

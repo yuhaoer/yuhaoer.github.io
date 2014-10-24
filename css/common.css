@@ -665,8 +665,11 @@ overflow: hidden;
 
 .idx-news
 {
+padding: 20px 25px;
+
+margin-bottom: 48px;
     overflow: hidden;
-    margin-bottom: 50px;
+
 }
 
 .idx-news .title {

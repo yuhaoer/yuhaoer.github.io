@@ -676,6 +676,15 @@ padding-bottom: 10px;
 border-bottom: solid 1px #EAEAEA;
 }
 
+.idx-news .title h2 {
+font-family: "microsoft yahei";
+font-size: 20px;
+color: #db6d4c;
+float: left;
+padding-right: 20px;
+border-right: solid 1px #E0E0E0;
+}
+
 .idx-news .cont {
 padding: 15px 0px 0px 0px;
 }

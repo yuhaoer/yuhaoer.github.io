@@ -814,7 +814,7 @@ border-top: solid 2px #DB6D4C;
 padding:20px;
 height: 60px;
 }
-/*.article-bottom .metatag {
+.article-bottom .metatag {
 height: 20px;
 padding: 18px 10px;
 color: #737373;
@@ -839,4 +839,4 @@ margin-left: 10px;
 height: 20px;
 line-height: 20px;
 background: url("../../images/articleList-sprite.png") no-repeat -100px 8px;
-}*/
+}

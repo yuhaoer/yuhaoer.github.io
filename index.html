@@ -157,7 +157,7 @@ title:
         <div class="article-bottom">
             <div class="metatag">
                 <span class="date">{{ post.date | date:"%Y-%m-%d" }}</span>
-                {{ post.tags | array_to_sentence_string }}
+                <span class="tags">{{ post.tags | array_to_sentence_string }}</span>
                 <a href="" class="au" target="_blank">
                     <span>{{post.author}}</span>
                     <i></i>

@@ -340,6 +340,7 @@ h2.first_title a:hover {
     color: #95a5a6;
     display: table-cell;
     font-size: 12px;
+    padding: 10px;
 }
 .index_lists .index_img {
     float: left;

@@ -1,28 +1,43 @@
----
-layout: default
-title: 
----
+--- layout: default title: ---
 <div style="background-color:#fff;padding-left: 10px">
-<h2 class="first_title">
-    <a href="{{ site:url  }}/code/">*.* 查看我的代码 ***</a>
-</h2>
-<p class="posted_info">全部是自己的东西，算是一种记录。如果觉得对你有点用，可以随便使用，如果觉得不好或很差，还希望能给于一定的指导</p>
-<h3>日志数({{ paginator.total_posts}})</h3>
+    <h2 class="first_title">
+        <a href="{{ site:url  }}/code/">*.* 查看我的代码 ***</a>
+    </h2>
+    <p class="posted_info">全部是自己的东西，算是一种记录。如果觉得对你有点用，可以随便使用，如果觉得不好或很差，还希望能给于一定的指导</p>
+    <h3>日志数({{ paginator.total_posts}})</h3>
 </div>
+
+<div class="lunbo">
+    <div class="holder notactive">
+        <img class="image" src="images/4237135170_61a9938781.jpg" height=""/>
+        <span>Image One</span>
+        <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+    </div>
+    <div class="holder notactive">
+        <img class="image" src="images/4166210326_06d91ce72a.jpg"/>
+        <span>Image Two</span>
+        <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+    </div>
+    <div class="holder notactive">
+        <img class="image" src="images/4060303038_a630262185.jpg"/>
+        <span>Image Three</span>
+        <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+    </div>
+</div>
+
 {% for post in paginator.posts %}
 <div class="index_lists">
     <div class="index_des">
         <div class="index_img">
             {% if post.img %}
-            <img src="{{ site:url }}/images/{{ post.img }}" alt="" />
-            {% endif %}
+            <img src="{{ site:url }}/images/{{ post.img }}" alt="" />{% endif %}
         </div>
         <h4>
             <a href="{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
         </h4>
         {{ post.description }}
         <div class="info">
-            {{post.author}}  发布于 {{ post.date | date:"%Y-%m-%d"  }}  [{{post.category}}]
+            {{post.author}} 发布于 {{ post.date | date:"%Y-%m-%d" }} [{{post.category}}]
         </div>
         <div class="blank10"></div>
     </div>
@@ -31,30 +46,23 @@ title:
 <div class="ep-pages">
     <span class="ep-pages-e5e5e5">第{{paginator.page}}页/共{{paginator.total_pages}}页</span>
     <a href="/">第一页</a>
-    {% if paginator.previous_page %}
-{% if paginator.previous_page == 1 %}
+    {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
     <a href="/" class="current">
         <<前一页</a>
             {% else %}
             <a href="/page{{paginator.previous_page}}">
                 <<前一页</a>
-                    {% endif %}
-{% else %}
+                    {% endif %} {% else %}
                     <span>
                         <<前一页</span>
-                            {% endif %}
-{% for count in (2..paginator.total_pages) limit:8 %}
-{% if count == paginator.page %}
+                            {% endif %} {% for count in (2..paginator.total_pages) limit:8 %} {% if count == paginator.page %}
                             <span class="current-page">{{count}}</span>
                             {% else %}
                             <a href="/page{{count}}">{{count}}</a>
-                            {% endif %}
-{% endfor %}
-
-{% if paginator.next_page %}
+                            {% endif %} {% endfor %} {% if paginator.next_page %}
                             <a href="/page{{paginator.next_page}}">后一页>></a>
                             {% else %}
                             <span>后一页>></span>
                             {% endif %}
                             <a href="/page{{paginator.total_pages}}">最后一页</a>
- </div>
+</div>

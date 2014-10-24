@@ -734,8 +734,8 @@ line-height: 14px;
 border-left: 1px solid #e7ecf4;
 border-top: 1px solid #dbe0e7;
 color: #dde1e7;
-margin: 20px 0 23px 10px;
-padding: 14px 14px 0px 17px;
+margin: 0x 0 23px 10px;
+padding: 14px 14px 14px 17px;
 }
 
 .tag-container{

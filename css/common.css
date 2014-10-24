@@ -796,3 +796,10 @@ border: 0;
 color: #c4c4c5;
 text-align: left;
 }
+
+.tags-box a {
+color: #006cd8;
+margin: 0 5px 0 10px;
+font-size: 12px;
+display: inline-block;
+}

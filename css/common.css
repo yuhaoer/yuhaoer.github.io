@@ -393,8 +393,8 @@ font-style: italic;
 
 .article-bottom .metatag span.tags {
 color: #737373;
-text-decoration: none;
-font-size: 0.5em;
+font-family: 'arial';
+font-size: 14px;
 position: relative;
 }
 

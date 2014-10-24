@@ -345,6 +345,16 @@ line-height: 20px;
 background: url("../../images/articleList-sprite.png") no-repeat -100px 8px;
 }
 
+.article-bottom .metatag .sor {
+font-weight: bold;
+float: right;
+font-size: 12px;
+color: #A3A3A3;
+line-height: 18px;
+padding: 3px 15px;
+margin-right: 10px;
+}
+
 .index_lists h4 a:hover {
     color: #EA756A;
 }

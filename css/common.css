@@ -673,7 +673,7 @@ overflow: hidden;
 .idx-news .title {
 height: 30px;
 line-height: 30px;
-padding-bottom: 10px;
+padding: 20px;
 border-bottom: solid 1px #EAEAEA;
 }
 

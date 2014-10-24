@@ -1,6 +1,6 @@
---- 
-layout: default 
-title: 
+---
+layout: default
+title:
 ---
 <div style="background-color:#fff;padding-left: 10px">
     <h2 class="first_title">
@@ -9,13 +9,13 @@ title:
     <p class="posted_info">全部是自己的东西，算是一种记录。如果觉得对你有点用，可以随便使用，如果觉得不好或很差，还希望能给于一定的指导</p>
     <h3>日志数({{ paginator.total_posts}})</h3>
 </div>
-
 {% for post in paginator.posts %}
 <div class="index_lists">
     <div class="index_des">
         <div class="index_img">
             {% if post.img %}
-            <img src="{{ site:url }}/images/{{ post.img }}" alt="" />{% endif %}
+            <img src="{{ site:url }}/images/{{ post.img }}" alt="" />
+            {% endif %}
         </div>
         <h4>
             <a href="{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
@@ -50,4 +50,4 @@ title:
                             <span>后一页>></span>
                             {% endif %}
                             <a href="/page{{paginator.total_pages}}">最后一页</a>
-</div>
+                        </div>

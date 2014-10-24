@@ -761,3 +761,19 @@ color: #999;
 font-size: 12px;
 padding: 5px 0;
 }
+
+.toutiao p {
+font-size: 18px;
+line-height: 28px;
+color: #666;
+margin: 0 0 10px;
+}
+
+.idx-toutiao .box-img img {
+width: 630px;
+box-shadow: 1px 1px 1px #ccc;
+}
+img {
+max-width: 100%;
+vertical-align: middle;
+border: 0;

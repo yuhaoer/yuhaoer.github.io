@@ -752,6 +752,7 @@ color:#9F968E;
 .toutiao {
 border-bottom: 1px dashed #ddd;
 padding: 15px;
+padding-top: 0;
 }
 .toutiao h2 {
 font-size: 26px;

@@ -820,7 +820,7 @@ padding: 18px 10px;
 color: #737373;
 }
 
-.article-bottom .metatag span{
+.article-bottom .metatag .date{
 height: 20px;
 float: left;
 color: #b5b5b5;

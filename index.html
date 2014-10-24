@@ -1,4 +1,7 @@
---- layout: default title: ---
+--- 
+layout: default
+title:
+---
 <div style="background-color:#fff;padding-left: 10px">
     <h2 class="first_title">
         <a href="{{ site:url  }}/code/">*.* 查看我的代码 ***</a>
@@ -17,8 +20,7 @@
                 <li class="clr">
                     <div class="img">
                         <a href="http://www.leiphone.com/latest/index/id/235" target="_blank">
-                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/5440c64588712.png">
-                        </a>
+                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/5440c64588712.png"></a>
                     </div>
                     <div class="word">
                         <h3>
@@ -30,8 +32,7 @@
                 <li class="clr">
                     <div class="img">
                         <a href="http://www.leiphone.com/latest/index/id/253" target="_blank">
-                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/5448b65aba9aa.jpg">
-                        </a>
+                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/5448b65aba9aa.jpg"></a>
                     </div>
                     <div class="word">
                         <h3>
@@ -43,8 +44,7 @@
                 <li class="clr">
                     <div class="img">
                         <a href="http://www.leiphone.com/latest/index/id/252" target="_blank">
-                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/5448b586c29ca.jpg">
-                        </a>
+                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/5448b586c29ca.jpg"></a>
                     </div>
                     <div class="word">
                         <h3>
@@ -60,8 +60,7 @@
                 <li class="clr">
                     <div class="img">
                         <a href="http://www.leiphone.com/latest/index/id/251" target="_blank">
-                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/5448b5594ce10.jpg">
-                        </a>
+                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/5448b5594ce10.jpg"></a>
                     </div>
                     <div class="word">
                         <h3>
@@ -73,8 +72,7 @@
                 <li class="clr">
                     <div class="img">
                         <a href="http://www.leiphone.com/latest/index/id/250" target="_blank">
-                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/544752907fa5e.jpg">
-                        </a>
+                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/544752907fa5e.jpg"></a>
                     </div>
                     <div class="word">
                         <h3>
@@ -86,8 +84,7 @@
                 <li class="clr">
                     <div class="img">
                         <a href="http://www.leiphone.com/latest/index/id/249" target="_blank">
-                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/54471bbae9210.jpg">
-                        </a>
+                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/54471bbae9210.jpg"></a>
                     </div>
                     <div class="word">
                         <h3>
@@ -107,7 +104,8 @@
     <div class="index_des">
         <div class="index_img">
             {% if post.img %}
-            <img src="{{ site:url }}/images/{{ post.img }}" alt="" />{% endif %}
+            <img src="{{ site:url }}/images/{{ post.img }}" alt="" />
+            {% endif %}
         </div>
         <h4>
             <a href="{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
@@ -142,4 +140,4 @@
                             <span>后一页>></span>
                             {% endif %}
                             <a href="/page{{paginator.total_pages}}">最后一页</a>
-</div>
+                        </div>

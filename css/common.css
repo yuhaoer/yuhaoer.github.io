@@ -739,7 +739,8 @@ padding: 14px 0 17px;
 }
 
 .tag-container{
-padding-left: 10px;
+    width: 980px;
+padding: 10px;
 margin: 20px;
 height: 60px;
 }

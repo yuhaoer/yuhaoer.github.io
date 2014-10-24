@@ -155,10 +155,9 @@ title:
         </h4>
         {{ post.description }}
 
-
     </div>
             <div class="info">
-        <div class="metatag">
+
                 <span class="date">{{ post.date | date:"%Y-%m-%d" }}</span>
                 <span class="tags">{{ post.tags | array_to_sentence_string }}</span>
                 <a href="" class="au" target="_blank">
@@ -166,7 +165,7 @@ title:
                     <i></i>
                 </a>
                 <a href="" class="sor">{{post.category}}</a>
-            </div>
+
             {{post.author}}  发布于 {{ post.date | date:"%Y-%m-%d"  }}  [{{post.category}}]
         </div>
                 <div class="blank10"></div>

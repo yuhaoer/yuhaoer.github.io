@@ -823,7 +823,7 @@ padding: 18px 10px;
 color: #737373;
 }
 
-.index_lists .info .metatag .date{
+.info span{
 height: 20px;
 float: left;
 color: #b5b5b5;

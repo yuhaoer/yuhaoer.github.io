@@ -333,6 +333,7 @@ h2.first_title a:hover {
     color: #555;
     line-height: 24px;
     font-size: 14px;
+    overflow: hidden;
 }
 .index_lists .info {
     border-bottom: 1px solid #e8e8e8;

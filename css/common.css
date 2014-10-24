@@ -129,6 +129,7 @@ overflow: hidden;
     top: 30px;
     left: 25%;*/
     float: left;
+    margin-top: 5px;
 }
 .top-nav-bar ul li {
     float: left;

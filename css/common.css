@@ -700,14 +700,10 @@ white-space: nowrap;
 text-overflow: ellipsis;
 }
 
-.idx-news .cont .news-ul li:hover .word h3 a {
-color: #F37A55;
-}
-
 .idx-news .cont .news-ul li .word h3 a {
 font-family: "microsoft yahei";
 font-size: 14px;
-color: #db6d4c;
+color: #F37A55;
 font-weight: bold;
 line-height: 34px;
 text-overflow: ellipsis;

@@ -734,12 +734,12 @@ line-height: 14px;
 border-left: 1px solid #e7ecf4;
 border-top: 1px solid #dbe0e7;
 color: #dde1e7;
-margin: 30px 0 23px 0;
+margin: 30px 0 23px 10px;
 padding: 14px 0 17px;
 }
 
 .tag-container{
-width: 680px;
+width: 700px;
 padding: 10px;
 height: 60px;
 }

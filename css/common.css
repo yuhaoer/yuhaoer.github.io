@@ -823,7 +823,7 @@ padding: 18px 10px;
 color: #737373;
 }
 
-.index_lists .article-bottom .metatag .date{
+.index_lists .info .metatag .date{
 height: 20px;
 float: left;
 color: #b5b5b5;
@@ -832,7 +832,7 @@ font-size: 14px;
 font-style: italic;
 }
 
-.article-bottom .metatag .tags {
+.index_lists .info .metatag .tags {
 max-width: 280px;
 overflow: hidden;
 float: left;

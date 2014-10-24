@@ -814,14 +814,15 @@ border-top: solid 2px #DB6D4C;
 .index_lists .article-bottom{
 padding:20px;
 height: 60px;
+margin-bottom: 10px;
 }
-.article-bottom .metatag {
+.index_lists .article-bottom .metatag {
 height: 20px;
 padding: 18px 10px;
 color: #737373;
 }
 
-.article-bottom .metatag .date{
+.index_lists .article-bottom .metatag .date{
 height: 20px;
 float: left;
 color: #b5b5b5;

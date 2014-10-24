@@ -82,11 +82,12 @@ overflow: hidden;
     display: block;
     width: 165px;
     height: 35px;
+        margin-top: 0;
 }
 .site-logo {
     float: left;
     width: 20.6%;
-    margin-top: 0;
+
 }
 .site-logo a {
 /*     background: url('../images/logo-new.png') no-repeat;

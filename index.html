@@ -156,7 +156,7 @@ title:
         {{ post.description }}
 
     </div>
-            <div class="info">
+<!--             <div class="info">
                 <span class="date">{{ post.date | date:"%Y-%m-%d" }}</span>
                 <span class="tags">{{ post.tags | array_to_sentence_string }}</span>
                 <a href="" class="au" target="_blank">
@@ -166,9 +166,9 @@ title:
                 <a href="" class="sor">{{post.category}}</a>
 
             {{post.author}}  发布于 {{ post.date | date:"%Y-%m-%d"  }}  [{{post.category}}]
-        </div>
-                <div class="blank10"></div>
-<!--             <div class="article-bottom">
+        </div> -->
+
+            <div class="article-bottom">
             <div class="metatag">
                 <span class="date">{{ post.date | date:"%Y-%m-%d" }}</span>
                 <span class="tags">{{ post.tags | array_to_sentence_string }}</span>
@@ -178,7 +178,9 @@ title:
                 </a>
                 <a href="" class="sor">{{post.category}}</a>
             </div>
-     </div> -->
+     </div>
+
+                     <div class="blank10"></div>
 </div>
 {% endfor %}
 <div class="ep-pages">

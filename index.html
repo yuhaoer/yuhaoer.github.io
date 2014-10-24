@@ -9,45 +9,135 @@ title:
     <p class="posted_info">全部是自己的东西，算是一种记录。如果觉得对你有点用，可以随便使用，如果觉得不好或很差，还希望能给于一定的指导</p>
     <h3>日志数({{ paginator.total_posts}})</h3>
 </div>
+
+<div class="idx-news">
+    <div class="title">
+        <h2>最新要闻</h2>
+</div>
+<div class="cont clr">
+    <div class="cont-left">
+        <ul class="news-ul">
+            <li class="clr">
+                <div class="img">
+                    <a href="http://www.leiphone.com/latest/index/id/235" target="_blank">
+                        <img src="http://leiphone.qiniudn.com/uploads/new/latest/5440c64588712.png"></a>
+                </div>
+                <div class="word">
+                    <h3>
+                        <a href="http://www.leiphone.com/latest/index/id/235" target="_blank">雷锋网正在招兵买马！</a>
+                    </h3>
+                    <p>欢迎志同道合的伙伴加盟我司。</p>
+                </div>
+            </li>
+            <li class="clr">
+                <div class="img">
+                    <a href="http://www.leiphone.com/latest/index/id/253" target="_blank">
+                        <img src="http://leiphone.qiniudn.com/uploads/new/latest/5448b65aba9aa.jpg"></a>
+                </div>
+                <div class="word">
+                    <h3>
+                        <a href="http://www.leiphone.com/latest/index/id/253" target="_blank">小米Q3国内出货量市场第一</a>
+                    </h3>
+                    <p>小米Q3成市场第一，国内出货量超三星。</p>
+                </div>
+            </li>
+            <li class="clr">
+                <div class="img">
+                    <a href="http://www.leiphone.com/latest/index/id/252" target="_blank">
+                        <img src="http://leiphone.qiniudn.com/uploads/new/latest/5448b586c29ca.jpg"></a>
+                </div>
+                <div class="word">
+                    <h3>
+                        <a href="http://www.leiphone.com/latest/index/id/252" target="_blank">MX4 Pro不使用圆点Home键</a>
+                    </h3>
+                    <p>李楠今日在微博公布了关于MX4 Pro的消息。</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="cont-right">
+        <ul class="news-ul">
+            <li class="clr">
+                <div class="img">
+                    <a href="http://www.leiphone.com/latest/index/id/251" target="_blank">
+                        <img src="http://leiphone.qiniudn.com/uploads/new/latest/5448b5594ce10.jpg"></a>
+                </div>
+                <div class="word">
+                    <h3>
+                        <a href="http://www.leiphone.com/latest/index/id/251" target="_blank">YunOS版MX4双11预售细节公布</a>
+                    </h3>
+                    <p>搭载YunOS的魅族MX4售价为1799元。</p>
+                </div>
+            </li>
+            <li class="clr">
+                <div class="img">
+                    <a href="http://www.leiphone.com/latest/index/id/250" target="_blank">
+                        <img src="http://leiphone.qiniudn.com/uploads/new/latest/544752907fa5e.jpg"></a>
+                </div>
+                <div class="word">
+                    <h3>
+                        <a href="http://www.leiphone.com/latest/index/id/250" target="_blank">黑色版移动4G小米4来了！</a>
+                    </h3>
+                    <p>移动4G黑色版小米4将于10月28日中午12点正式开卖。</p>
+                </div>
+            </li>
+            <li class="clr">
+                <div class="img">
+                    <a href="http://www.leiphone.com/latest/index/id/249" target="_blank">
+                        <img src="http://leiphone.qiniudn.com/uploads/new/latest/54471bbae9210.jpg"></a>
+                </div>
+                <div class="word">
+                    <h3>
+                        <a href="http://www.leiphone.com/latest/index/id/249" target="_blank">首批iPad Air 2和mini 3订单发货</a>
+                    </h3>
+                    <p>据最新消息报道，即日起，首批订单将开始发货。</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- cont END -->
+</div>
+<!-- end news -->
 {% for post in paginator.posts %}
 <div class="index_lists">
-    <div class="index_des">
-        <div class="index_img">
-            {% if post.img %}
-            <img src="{{ site:url }}/images/{{ post.img }}" alt="" />
-            {% endif %}
-        </div>
-        <h4>
-            <a href="{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
-        </h4>
-        {{ post.description }}
-        <div class="info">
-            {{post.author}} 发布于 {{ post.date | date:"%Y-%m-%d" }} [{{post.category}}]
-        </div>
-        <div class="blank10"></div>
+<div class="index_des">
+    <div class="index_img">
+        {% if post.img %}
+        <img src="{{ site:url }}/images/{{ post.img }}" alt="" />
+        {% endif %}
     </div>
+    <h4>
+        <a href="{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
+    </h4>
+    {{ post.description }}
+    <div class="info">
+        {{post.author}} 发布于 {{ post.date | date:"%Y-%m-%d" }} [{{post.category}}]
+    </div>
+    <div class="blank10"></div>
+</div>
 </div>
 {% endfor %}
 <div class="ep-pages">
-    <span class="ep-pages-e5e5e5">第{{paginator.page}}页/共{{paginator.total_pages}}页</span>
-    <a href="/">第一页</a>
-    {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
-    <a href="/" class="current">
-        <<前一页</a>
-            {% else %}
-            <a href="/page{{paginator.previous_page}}">
-                <<前一页</a>
-                    {% endif %} {% else %}
-                    <span>
-                        <<前一页</span>
-                            {% endif %} {% for count in (2..paginator.total_pages) limit:8 %} {% if count == paginator.page %}
-                            <span class="current-page">{{count}}</span>
-                            {% else %}
-                            <a href="/page{{count}}">{{count}}</a>
-                            {% endif %} {% endfor %} {% if paginator.next_page %}
-                            <a href="/page{{paginator.next_page}}">后一页>></a>
-                            {% else %}
-                            <span>后一页>></span>
-                            {% endif %}
-                            <a href="/page{{paginator.total_pages}}">最后一页</a>
-                        </div>
+<span class="ep-pages-e5e5e5">第{{paginator.page}}页/共{{paginator.total_pages}}页</span>
+<a href="/">第一页</a>
+{% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
+<a href="/" class="current">
+    <<前一页</a>
+        {% else %}
+        <a href="/page{{paginator.previous_page}}">
+            <<前一页</a>
+                {% endif %} {% else %}
+                <span>
+                    <<前一页</span>
+                        {% endif %} {% for count in (2..paginator.total_pages) limit:8 %} {% if count == paginator.page %}
+                        <span class="current-page">{{count}}</span>
+                        {% else %}
+                        <a href="/page{{count}}">{{count}}</a>
+                        {% endif %} {% endfor %} {% if paginator.next_page %}
+                        <a href="/page{{paginator.next_page}}">后一页>></a>
+                        {% else %}
+                        <span>后一页>></span>
+                        {% endif %}
+                        <a href="/page{{paginator.total_pages}}">最后一页</a>
+                    </div>

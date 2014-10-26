@@ -282,7 +282,7 @@ transition: .2s;
 
 .postcontent {
     line-height: 1.5;
-
+padding-bottom: 30px;
 
 }
 .postcontent p{
@@ -290,7 +290,6 @@ font-size: 16px;
 line-height: 26px;
 color: #333;
 margin: 0 0 20px 0;
-padding-bottom: 30px;
 }
 
 .postcontent p a{

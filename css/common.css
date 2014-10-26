@@ -285,11 +285,10 @@ transition: .2s;
     margin-bottom: 20px;
     border: 1px solid #CCD4D9;
     padding:10px;
-    color: #4da6ff;
 }
 .likepost ul{
 padding-left: 25px;
-list-style-type: disc;
+list-style-type: decimal;
 }
 
 .likepost ul li{

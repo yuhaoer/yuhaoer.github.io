@@ -235,6 +235,12 @@ color: #333;
 /*    border-bottom: 1px solid #ededed;*/
 /*    font-weight: 900px;*/
     overflow: hidden;
+    font-size: 1.1em;
+font-weight: bold;
+color: #9F968E;
+letter-spacing: .1em;
+line-height: 1.5em;
+
 }
 h2.first_title a {
     color: #EA756A;

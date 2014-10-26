@@ -231,9 +231,9 @@ h2.first_title {
     font-size: 26px;
 line-height: 38px;
 /*font-weight: bold;*/
-
+color: #333;
     border-bottom: 1px solid #ededed;
-    font-weight: 900px;
+/*    font-weight: 900px;*/
     overflow: hidden;
 }
 h2.first_title a {

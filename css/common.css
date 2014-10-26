@@ -252,6 +252,27 @@ border-bottom: 1px solid #eee;
 margin-bottom: 23px;
 
 }
+
+.post-category{
+    font-size: 12px;
+padding: 3px 10px;
+margin: 10px 5px 0 0;
+background-color: #E3F7FE;
+color: #47A8C8;
+cursor: pointer;
+display: inline-block;
+border-radius: 2px;
+line-height: 1.1;
+}
+
+.post-category:hover {
+color: #2E8CAC;
+background-color: #D2F2FD;
+transition: .2s;
+}
+
+
+
 .postcontent {
     line-height: 1.5;
 

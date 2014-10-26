@@ -241,13 +241,6 @@ color: #9F968E;
 
 }
 
-h2.first_title ul{
-padding-left: 25px;
-}
-
-h2.first_title ul li{
-line-height: 20px;
-}
 
 
 
@@ -293,6 +286,15 @@ transition: .2s;
     border: 1px dashed #00BB6F;
     padding:10px;
 }
+.likepost ul{
+padding-left: 25px;
+}
+
+.likepost ul li{
+line-height: 20px;
+}
+
+
 .likepost h2{
     font-size: 16px;
 }

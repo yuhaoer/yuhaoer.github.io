@@ -271,7 +271,14 @@ background-color: #D2F2FD;
 transition: .2s;
 }
 
+.likepost
+{
+    margin-top: 10px;
 
+}
+.likepost h2{
+    font-size: 20px;
+}
 
 .postcontent {
     line-height: 1.5;

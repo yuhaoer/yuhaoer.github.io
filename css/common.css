@@ -276,6 +276,7 @@ transition: .2s;
     margin-top: 10px;
     margin-bottom: 20px;
     border: 1px dashed #00BB6F;
+    padding:10px;
 }
 .likepost h2{
     font-size: 16px;

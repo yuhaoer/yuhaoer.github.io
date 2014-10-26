@@ -486,6 +486,17 @@ position: relative;
 margin-left: 240px;
 }
 
+.article-right p{
+font-family: "microsoft yahei";
+font-size: 12px;
+color: #858585;
+line-height: 16px;
+height: 16px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
 .index_lists .index_img {
     float: left;
     margin: 0px 10px 10px 0px;

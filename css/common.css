@@ -262,6 +262,9 @@ margin: 0 0 20px 0;
 .postcontent p a{
     color: #333;
 }
+.postcontent ul li{
+    color: #333;
+}
 
 .content_h2 {
     padding: 10px 0px 10px 0px;

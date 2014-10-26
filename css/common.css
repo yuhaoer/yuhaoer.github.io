@@ -245,12 +245,17 @@ h2.first_title a:hover {
 }
 .postcontent {
     line-height: 1.5;
-    font-size: 15px;
+
+
+}
+.postcontent p{
+font-size: 16px;
 line-height: 26px;
 color: #333;
-word-spacing: 0.2em;
+color: #414243;
+margin: 0 0 20px 0;
 }
-}
+
 .content_h2 {
     padding: 10px 0px 10px 0px;
     border-bottom: 1px solid #ededed;

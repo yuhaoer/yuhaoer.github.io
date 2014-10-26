@@ -283,11 +283,12 @@ transition: .2s;
 {
     margin-top: 10px;
     margin-bottom: 20px;
-    border: 1px dashed #00BB6F;
+    border: 1px solid #CCD4D9;
     padding:10px;
 }
 .likepost ul{
 padding-left: 25px;
+list-style-type: disc;
 }
 
 .likepost ul li{

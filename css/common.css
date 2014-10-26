@@ -240,6 +240,17 @@ font-weight: bold;
 color: #9F968E;
 
 }
+
+h2.first_title ul{
+padding-left: 25px;
+}
+
+h2.first_title ul li{
+line-height: 20px;
+}
+
+
+
 h2.first_title a {
     color: #EA756A;
     text-decoration: none;

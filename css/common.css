@@ -285,6 +285,7 @@ transition: .2s;
     margin-bottom: 20px;
     border: 1px solid #CCD4D9;
     padding:10px;
+    color: #4da6ff;
 }
 .likepost ul{
 padding-left: 25px;
@@ -293,6 +294,7 @@ list-style-type: disc;
 
 .likepost ul li{
 line-height: 20px;
+margin:10px 0;
 }
 
 

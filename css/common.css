@@ -232,7 +232,7 @@ h2.first_title {
 line-height: 38px;
 /*font-weight: bold;*/
 color: #333;
-    border-bottom: 1px solid #ededed;
+/*    border-bottom: 1px solid #ededed;*/
 /*    font-weight: 900px;*/
     overflow: hidden;
 }
@@ -257,6 +257,10 @@ font-size: 16px;
 line-height: 26px;
 color: #333;
 margin: 0 0 20px 0;
+}
+
+.postcontent p a{
+    color: #333;
 }
 
 .content_h2 {

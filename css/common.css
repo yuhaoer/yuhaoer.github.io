@@ -486,6 +486,12 @@ position: relative;
 margin-left: 240px;
 }
 
+.article-right-text {
+font-family: "NSimSun";
+font-size: 12px;
+color: #aaa;
+line-height: 1.8;
+}
 
 .index_lists .index_img {
     float: left;

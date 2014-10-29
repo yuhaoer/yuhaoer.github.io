@@ -33,11 +33,11 @@
 }
 /***********头部**************/
 
-#logo{
+/*#logo{
     display: block;
     width: 165px;
     height: 45px;
-}
+}*/
 #header .site-logo a {
     /*     background: url('../images/logo-new.png') no-repeat;
     background-position: 0px 10px;*/
@@ -368,6 +368,7 @@ h2.first_title a:hover {
     overflow: hidden;
     border-bottom: 1px solid #e5e5e5;
     padding: 10px 20px 10px 12px;
+    margin-top: 2px;
 }
 .index_lists .info {
     border-bottom: 1px solid #e8e8e8;

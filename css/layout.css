@@ -31,11 +31,7 @@ body {
     padding: 20px 20px;
     overflow: hidden;
 }
-#logo{
-    display: block;
-    width: 165px;
-    height: 35px;
-}
+
 
 #header .site-logo {
     float: left;

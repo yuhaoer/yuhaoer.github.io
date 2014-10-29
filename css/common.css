@@ -1,10 +1,10 @@
 ::selection {
     color: #fff;
-    background-color: #646464;
+    background-color: #00BB6F;
 }
 ::-moz-selection {
     color: #fff;
-    background-color: #646464;
+    background-color: #00BB6F;
 }
 .left {
     float: left;

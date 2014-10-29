@@ -51,3 +51,7 @@ table {
 
 /* 重置文本格式元素 */
 a { text-decoration: none; }
+
+img {
+    border: 0px;
+}

@@ -10,9 +10,6 @@ background-color: #646464;
 }
 
 
-img {
-    border: 0px;
-}
 .left {
     float: left;
 }
@@ -49,10 +46,9 @@ img {
     display: block;
     width: 165px;
     height: 35px;
-/*    margin-top: 0;*/
-    color: #00BB6F;
+/*    color: #00BB6F;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2em;*/
 }
 #header .site-logo p {
     font-size: 85%;
@@ -75,28 +71,27 @@ img {
     box-sizing: border-box;
     text-align: center;
 }*/
-.top-nav-bar {
+#header .top-nav-bar {
 /*    position: absolute;
     top: 30px;
     left: 25%;*/
     float: left;
-  /*  margin-top: 5px;*/
     padding-top: 5px;
 }
-.top-nav-bar ul li {
+#header .top-nav-bar ul li {
     float: left;
     display: inline;
     margin-right: 1.5em;
     text-align: center;
 }
-.top-nav-bar ul li a {
+#haeder .top-nav-bar ul li a {
     font-size: 1.1em;
     font-weight: bold;
     color: #9F968E;
     letter-spacing: .1em;
     line-height: 1.5em;
 }
-.top-nav-bar ul li a em {
+#header .top-nav-bar ul li a em {
     display: block;
     font-size: .55em;
     font-style: normal;

@@ -42,10 +42,10 @@ img {
 
 /***********头部**************/
 #logo {
-    display: block;
+/*    display: block;
     width: 165px;
     height: 35px;
-    margin-top: 0;
+    margin-top: 0;*/
 }
 
 #header .site-logo {
@@ -57,7 +57,10 @@ img {
 /*     background: url('../images/logo-new.png') no-repeat;
     background-position: 0px 10px;
     display: inline-block;*/
-
+    display: block;
+    width: 165px;
+    height: 35px;
+    margin-top: 0;
     color: #00BB6F;
     font-weight: bold;
     font-size: 2em;

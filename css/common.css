@@ -42,7 +42,6 @@
     /*     background: url('../images/logo-new.png') no-repeat;
     background-position: 0px 10px;*/
     display: inline-block;
-    display: block;
     width: 160px;
     height: 35px;
     /*    color: #00BB6F;
@@ -52,7 +51,7 @@
 #header .site-logo p {
     font-size: 85%;
     color: #675d53;
-    letter-spacing: .3em;
+    letter-spacing: .2em;
 }
 /*导航条*/
 

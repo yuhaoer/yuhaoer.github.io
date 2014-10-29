@@ -33,10 +33,15 @@
 }
 /***********头部**************/
 
+#logo{
+    display: block;
+    width: 165px;
+    height: 35px;
+}
 #header .site-logo a {
     /*     background: url('../images/logo-new.png') no-repeat;
-    background-position: 0px 10px;
-    display: inline-block;*/
+    background-position: 0px 10px;*/
+    display: inline-block;
     display: block;
     width: 165px;
     height: 35px;

@@ -360,16 +360,14 @@ h2.first_title a:hover {
     color: #666;
 }
 .index_lists .index_des {
-    font-family: "宋体";
     border-top: 1px solid #fefefe;
-    padding-left: 10px;
     color: #555;
     line-height: 24px;
     font-size: 14px;
-    overflow: hidden;
     border-bottom: 1px solid #e5e5e5;
     padding: 10px 20px 10px 12px;
     margin-top: 2px;
+    overflow: hidden;
 }
 .index_lists .info {
     border-bottom: 1px solid #e8e8e8;

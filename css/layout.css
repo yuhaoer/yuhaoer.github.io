@@ -31,12 +31,10 @@ body {
     padding: 22px 20px;
     overflow: hidden;
 }
+#header .site-logo {
+    float: left;
+    width: 20.6%;
 
-#logo {
-    display: block;
-    width: 165px;
-    height: 35px;
-        margin-top: 0;
 }
 
 

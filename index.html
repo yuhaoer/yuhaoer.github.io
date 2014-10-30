@@ -64,7 +64,8 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
         <div class="cont-left">
             <ul class="news-ul">
 
-            {% for post in   site.categories.last   %}
+            {% for category in   site.categories["news"]   %}
+ {% for post in category.last %}
             {% if post.group == "news" %}
                 <li class="clr">
                     <div class="img">
@@ -80,6 +81,8 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
                 </li>
                 {% endif %}
                 {% endfor %}
+                  {% endfor %}
+
             </ul>
         </div>
 

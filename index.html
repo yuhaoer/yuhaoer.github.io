@@ -53,7 +53,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
         </span>
     </div>
 </div>
-      {% endif %}
+{% endif %}
 {% endfor %}
 
 <div class="idx-news radius">
@@ -61,88 +61,52 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
         <h2>最新要闻</h2>
     </div>
     <div class="cont clr">
+
         <div class="cont-left">
             <ul class="news-ul">
+            {% for post in paginator.posts limit:3 %}
+            {% if post.group == "news" %}
                 <li class="clr">
                     <div class="img">
-                        <a href="http://www.leiphone.com/latest/index/id/235" target="_blank">
-                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/5440c64588712.png"></a>
+                        <a href="{{ site:url  }}{{ post.url  }}" target="_blank">
+                            <img src="{{ site:url }}/images/{{ post.img }}"></a>
                     </div>
                     <div class="word">
                         <h3>
-                            <a href="http://www.leiphone.com/latest/index/id/235" target="_blank">雷锋网正在招兵买马！</a>
+                            <a href="h{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
                         </h3>
-                        <p>欢迎志同道合的伙伴加盟我司。</p>
+                        <p>{{post.subtitle}}</p>
                     </div>
                 </li>
-                <li class="clr">
-                    <div class="img">
-                        <a href="http://www.leiphone.com/latest/index/id/253" target="_blank">
-                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/5448b65aba9aa.jpg"></a>
-                    </div>
-                    <div class="word">
-                        <h3>
-                            <a href="http://www.leiphone.com/latest/index/id/253" target="_blank">小米Q3国内出货量市场第一</a>
-                        </h3>
-                        <p>小米Q3成市场第一，国内出货量超三星。</p>
-                    </div>
-                </li>
-                <li class="clr">
-                    <div class="img">
-                        <a href="http://www.leiphone.com/latest/index/id/252" target="_blank">
-                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/5448b586c29ca.jpg"></a>
-                    </div>
-                    <div class="word">
-                        <h3>
-                            <a href="http://www.leiphone.com/latest/index/id/252" target="_blank">MX4 Pro不使用圆点Home键</a>
-                        </h3>
-                        <p>李楠今日在微博公布了关于MX4 Pro的消息。</p>
-                    </div>
-                </li>
+                {% endif %}
+                {% endfor %}
             </ul>
         </div>
+
         <div class="cont-right">
             <ul class="news-ul">
+                      {% for post in paginator.posts limit:3 %}
+            {% if post.group == "news" %}
                 <li class="clr">
                     <div class="img">
-                        <a href="http://www.leiphone.com/latest/index/id/251" target="_blank">
-                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/5448b5594ce10.jpg"></a>
+                        <a href="{{ site:url  }}{{ post.url  }}" target="_blank">
+                            <img src="{{ site:url }}/images/{{ post.img }}"></a>
                     </div>
                     <div class="word">
                         <h3>
-                            <a href="http://www.leiphone.com/latest/index/id/251" target="_blank">YunOS版MX4双11预售细节公布</a>
+                            <a href="h{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
                         </h3>
-                        <p>搭载YunOS的魅族MX4售价为1799元。</p>
+                        <p>{{post.subtitle}}</p>
                     </div>
                 </li>
-                <li class="clr">
-                    <div class="img">
-                        <a href="http://www.leiphone.com/latest/index/id/250" target="_blank">
-                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/544752907fa5e.jpg"></a>
-                    </div>
-                    <div class="word">
-                        <h3>
-                            <a href="http://www.leiphone.com/latest/index/id/250" target="_blank">黑色版移动4G小米4来了！</a>
-                        </h3>
-                        <p>移动4G黑色版小米4将于10月28日中午12点正式开卖。</p>
-                    </div>
-                </li>
-                <li class="clr">
-                    <div class="img">
-                        <a href="http://www.leiphone.com/latest/index/id/249" target="_blank">
-                            <img src="http://leiphone.qiniudn.com/uploads/new/latest/54471bbae9210.jpg"></a>
-                    </div>
-                    <div class="word">
-                        <h3>
-                            <a href="http://www.leiphone.com/latest/index/id/249" target="_blank">首批iPad Air 2和mini 3订单发货</a>
-                        </h3>
-                        <p>据最新消息报道，即日起，首批订单将开始发货。</p>
-                    </div>
-                </li>
+                {% endif %}
+                {% endfor %}
             </ul>
         </div>
+
     </div>
 </div>
+
 {% for post in paginator.posts %}
 {% if post.toutiao != 1 %}
 <div class="index_lists">

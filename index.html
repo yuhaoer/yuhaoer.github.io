@@ -56,21 +56,6 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
 {% endif %}
 {% endfor %}
 
-<div class="clear:both">
-    <ul class="side_ul">
-        {% for category in site.categories  %}
-        <li><a href="{{ site.url }}/categorys/{{ category | first  }}.html">{{ category | first  }}({{ category | last | size  }})</a></li>
-        {% endfor  %}
-    </ul>
-    <p>xiong</p>
-
-
-        {% for post in site.categories['news']  %}
-        {{post.url}}        {{post.title}}
-        {% endfor  %}
-
-</div>
-
 <div class="idx-news radius">
     <div class="title">
         <h2>最新要闻</h2>

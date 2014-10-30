@@ -25,14 +25,17 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
 </div>
 
 
+
+{% for post in paginator.posts %}
+ {% if post.toutiao == 1 %}
 <div class="toutiao idx-toutiao radius">
     <h2>
-        <a href="/article/44492/1.html" target="_blank">互联网法律服务的“三个代表”</a>
+        <a href="{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
     </h2>
-    <p>被视为蓝海的在线法律服务已聚集了众多颠覆者</p>
+    <p>{{post.subtitle}}</p>
     <div class="box-img">
-        <a href="/article/44492/1.html" target="_blank">
-            <img src="http://img.huxiu.com/portal/201410/24/072202vqlr0lor30ff3003.jpg"></a>
+        <a href="{{ site:url  }}{{ post.url  }}" target="_blank">
+            <img src="{{ site:url }}/images/{{ post.img }}"></a>
     </div>
     <div class="box-other">
         <span class="toggle-tooltip later-reading-wrap">
@@ -43,18 +46,17 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
             <a class="hx-card" userid="303086" href="/member/303086.html" target="_blank">Eastland</a>
             <a href="/renzheng.html?#hxtdrz" target="_blank" class="c-hxrz hxfwtd" title="虎嗅团队"></a>
         </span>
-        <time>2014-10-24 07:22:00</time>
+        <time>{{ post.date | date:"%Y-%m-%d" }}</time>
         <span class="comment-box"> <i class="icon-comment"></i>
             <a href="/comment/44492/1.html" target="_blank">9</a>
         </span>
         <span class="tags-box">
-            <a href="/tags/3005.html" target="_blank">法律</a>
-            <a href="/tags/3065.html" target="_blank">P2P</a>
-            <a href="/tags/29.html" target="_blank">创业</a>
-            <a href="/tags/2263.html" target="_blank">头条</a>
+{{ post.tags | array_to_sentence_string }}
         </span>
     </div>
 </div>
+      {% endif %}
+{% endfor %}
 
 <div class="idx-news radius">
     <div class="title">

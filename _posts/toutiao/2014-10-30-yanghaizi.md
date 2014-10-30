@@ -9,7 +9,7 @@ keywords: 孩子淘气怎么办,小孩调皮怎么办
 toutiao: 1
 tags: [Jekyll,Github,头条]
 ---
-<img src="{{ site:url }}/images/{{ post.img }}" alt="" />
+<img src="/images/toutiao/20141030.jpg" alt="" />
 
 有一个小男孩儿，三岁多，他最近干了一件“坏事”，他把一碗滚烫的菜汤倒进了花盆里 —— 这盆名贵的花，是他爸爸刚刚从花市里找来，又费了九牛二虎之力亲自搬回来的！
 

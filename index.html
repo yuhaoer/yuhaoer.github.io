@@ -64,7 +64,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
 
         <div class="cont-left">
             <ul class="news-ul">
-            {% for post in paginator.posts limit:3 %}
+            {% for post in paginator.posts limit:4 %}
             {% if post.group == "news" %}
                 <li class="clr">
                     <div class="img">
@@ -73,7 +73,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
                     </div>
                     <div class="word">
                         <h3>
-                            <a href="h{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
+                            <a href="{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
                         </h3>
                         <p>{{post.subtitle}}</p>
                     </div>
@@ -85,7 +85,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
 
         <div class="cont-right">
             <ul class="news-ul">
-                      {% for post in paginator.posts limit:3 %}
+                      {% for post in paginator.posts limit:4 %}
             {% if post.group == "news" %}
                 <li class="clr">
                     <div class="img">
@@ -94,7 +94,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
                     </div>
                     <div class="word">
                         <h3>
-                            <a href="h{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
+                            <a href="{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
                         </h3>
                         <p>{{post.subtitle}}</p>
                     </div>

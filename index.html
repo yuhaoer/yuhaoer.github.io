@@ -23,7 +23,16 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
         <a href="http://www.huxiu.com/zhuanti/hxlenovoznds" target="_blank">智能电视</a>
     </div>
 </div>
-{% include /toutiao/2012-06-10-a-mac-god.html  %}
+
+{% for post in paginator.posts %}
+<div>
+            {% if post.img ==1 %}
+            <img src="{{ site:url }}/images/{{ post.img }}" alt="" />
+            {% endif %}
+
+</div>
+{% endfor %}
+
 <div class="toutiao idx-toutiao radius">
     <h2>
         <a href="/article/44492/1.html" target="_blank">互联网法律服务的“三个代表”</a>

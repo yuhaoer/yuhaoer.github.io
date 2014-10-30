@@ -24,7 +24,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
     </div>
 </div>
 
-{% for post in paginator.posts %}
+    {% for post in paginator.posts %}
  {% if post.toutiao == 1 %}
 <div class="toutiao idx-toutiao radius">
     <h2>
@@ -64,7 +64,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
         <div class="cont-left">
             <ul class="news-ul">
 
-            {% for post in paginator.posts  %}
+    {% for post in paginator.posts %}
             {% if post.group == "news" %}
                 <li class="clr">
                     <div class="img">
@@ -86,7 +86,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
 
         <div class="cont-right">
             <ul class="news-ul">
-         {% for post in (4..paginator.posts) limit:3 %}
+    {% for post in paginator.posts %}
             {% if post.group == "news" %}
                 <li class="clr">
                     <div class="img">
@@ -108,7 +108,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
     </div>
 </div>
 
-{% for post in paginator.posts %}
+    {% for post in paginator.posts %}
 {% if post.toutiao != 1 %}
 <div class="index_lists">
     <div class="index_des">

@@ -159,14 +159,14 @@ h2.first_title {
     padding: 0px;
     height: 40px;
 /*    line-height: 50px;*/
-    font-size: 30px;
+    font-size: 35px;
     line-height: 38px;
     /*font-weight: bold;*/
     color: #333;
     /*    border-bottom: 1px solid #ededed;*/
     /*    font-weight: 900px;*/
     overflow: hidden;
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #9F968E;
 }
@@ -183,7 +183,7 @@ h2.first_title a:hover {
     color: #999;
     padding: 7px 0;
     border-bottom: 1px solid #eee;
-    margin-bottom: 23px;
+    margin-bottom: 10px;
 }
 .post-category {
     font-size: 12px;

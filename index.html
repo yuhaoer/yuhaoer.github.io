@@ -109,7 +109,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
 </div>
 
     {% for post in paginator.posts %}
-{% if post.toutiao != 1 %}
+{% if post.toutiao != 1  and post.group != 'news' %}
 <div class="index_lists">
     <div class="index_des">
         <div class="index_img">

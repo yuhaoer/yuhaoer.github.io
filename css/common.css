@@ -31,6 +31,9 @@
     clear: both;
     height: 20px;
 }
+a{
+    color:#333;
+}
 /***********头部**************/
 
 #logo {
@@ -215,6 +218,8 @@ h2.first_title a:hover {
     line-height: 20px;
     margin: 10px 0;
 }
+
+
 .likepost h2 {
     font-size: 18px;
     color: #FF8C00;

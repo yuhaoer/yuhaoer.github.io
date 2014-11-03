@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "育好儿_读懂孩子,科学教养"
+title: "育好儿 - 读懂孩子,科学教养"
 description: "育好儿,为您传递最有价值的育儿理论。读懂孩子,科学教养,是我们坚持不懈的追求。"
 keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理学
 ---
@@ -135,15 +135,10 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
     </div>
 </div>
 {% endfor %}
-<!--   {% for node in site.pages %}
-        <li>
-<a href="{{ site:url }}{{node.url}}">{{node.title}}</a>
-</li>
-{% endfor %}
- -->
+
 <!-- 分页 -->
 <div class="ep-pages">
-<span class="ep-pages-e5e5e5">第{{paginator.page}}页/共{{paginator.total_pages}}页</span>
+<span>第{{paginator.page}}页/共{{paginator.total_pages}}页</span>
 <a href="/">第一页</a>
 {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
 <a href="/" class="current">前一页</a>

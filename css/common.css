@@ -236,12 +236,15 @@ h2.first_title a:hover {
     margin: 0 0 20px 0;
 }
 .postcontent  blockquote {
-color: #909090;
+color: #F48D26;
 margin: 0 0 18px 18px;
+background-color: #F0F0F0;
 }
+
 .postcontent blockquote p {
 font-style: italic;
 font-size: 14px;
+font-weight: blod;
 }
 
 .postcontent p a {

@@ -346,13 +346,17 @@ h2.first_title a:hover {
     background: url("../../images/articleList-sprite.png") no-repeat -100px 8px;
 }
 
-.article-bottom .metatag .tags li{
+.metatag .tags li{
 float: left;
 padding-right: 5px;
 }
 
-.article-bottom .metatag .tags  li a{
+.metatag .tags  li a{
 font-size: 0.9rem;
+}
+
+.metatag .tags li:hover a {
+color: #DB6D4C;
 }
 
 

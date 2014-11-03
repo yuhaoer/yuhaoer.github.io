@@ -54,6 +54,8 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
 </div>
 {% endif %}
 {% endfor %}
+
+
 <div class="idx-news radius">
     <div class="title">
         <h2>最新要闻</h2>
@@ -61,18 +63,18 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
     <div class="cont clr">
         <div class="cont-left">
             <ul class="news-ul">
-                {% for post in site.categories['news'] limit:3 %}
-            {% if post.group == "news" %}
+{% for page in site.pages %}
+{% if page.group == 'news' %}
                 <li class="clr">
                     <div class="img">
-                        <a href="{{ site:url  }}{{ post.url  }}" target="_blank">
-                            <img src="{{ site:url }}/images/{{ post.img }}"></a>
+                        <a href="{{ site:url  }}{{ page.url  }}" target="_blank">
+                            <img src="{{ site:url }}/images/{{ page.img }}"></a>
                     </div>
                     <div class="word">
                         <h3>
-                            <a href="{{ site:url  }}{{ post.url  }}" target="_blank">{{post.title}}</a>
+                            <a href="{{ site:url  }}{{ page.url  }}" target="_blank">{{page.title}}</a>
                         </h3>
-                        <p>{{post.subtitle}}</p>
+                        <p>{{page.subtitle}}</p>
                     </div>
                 </li>
                 {% endif %}

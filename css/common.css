@@ -348,11 +348,12 @@ h2.first_title a:hover {
 
 .metatag .tags li{
 float: left;
-padding-right: 5px;
+padding-right: 10px;
 }
 
 .metatag .tags  li a{
 font-size: 0.6em;
+color:#BBB5C5;
 }
 
 .metatag .tags li:hover a {

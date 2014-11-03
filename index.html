@@ -125,12 +125,10 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
     <div class="article-bottom">
         <div class="metatag">
             <span class="date">{{ post.date | date:"%Y-%m-%d" }}</span>
-                        <ul class="tags">
+            <ul class="tags">
             {% assign tags_list = post.tags %}
             {% include COM/tags_list %}
             </ul>
-
-            <span class="tags">{{ post.tags | array_to_sentence_string }}</span>
             <a href="" class="au" target="_blank">
                 <span>{{post.author}}</span>
                 <i></i>

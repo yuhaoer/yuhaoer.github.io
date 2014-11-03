@@ -4,6 +4,8 @@ title: "育好儿_读懂孩子,科学教养"
 description: "育好儿,为您传递最有价值的育儿理论。读懂孩子,科学教养,是我们坚持不懈的追求。"
 keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理学
 ---
+
+<!-- 标签云 -->
 <div  class="tag-container radius" >
     <div class="biaoqian idx-biaoqian">
         <a href="/tags/374.html" target="_blank">大数据</a>
@@ -24,7 +26,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
     </div>
 </div>
 
-
+<!-- 头条 -->
 {% for page in site.pages %}
 {% if page.group == 'topline' %}
 <div class="toutiao idx-toutiao radius">
@@ -55,7 +57,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
 {% endif %}
 {% endfor %}
 
-
+<!-- 最新要闻 -->
 <div class="idx-news radius">
     <div class="title">
         <h2>最新要闻</h2>
@@ -63,7 +65,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
     <div class="cont clr">
         <div class="cont-left">
             <ul class="news-ul">
-{% for page in site.pages %}
+            {% for page in site.pages limit:3 %}
 {% if page.group == 'news' %}
                 <li class="clr">
                     <div class="img">
@@ -84,8 +86,8 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
 
         <div class="cont-right">
             <ul class="news-ul">
-                {% for post in site.categories['news'] limit:3 offset:3 %}
-            {% if post.group == "news" %}
+            {% for page in site.pages limit:3 offset:3 %}
+            {% if page.group == 'news' %}
                 <li class="clr">
                     <div class="img">
                         <a href="{{ site:url  }}{{ post.url  }}" target="_blank">
@@ -105,8 +107,9 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
 
     </div>
 </div>
+
+<!-- 文章列表 -->
 {% for post in paginator.posts %}
-{% if post.toutiao != 1  and post.group != 'news' %}
 <div class="index_lists">
     <div class="index_des">
         <div class="index_img">
@@ -134,7 +137,6 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
         </div>
     </div>
 </div>
-{% endif %}
 {% endfor %}
 
 <!--   {% for node in site.pages %}

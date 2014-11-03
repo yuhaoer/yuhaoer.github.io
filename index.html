@@ -24,10 +24,10 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
         <a href="http://www.huxiu.com/zhuanti/hxlenovoznds" target="_blank">智能电视</a>
     </div>
 </div>
-
+{% if paginator.page ==1 %}
 <!-- 头条 -->
 {% for page in site.pages %}
-{% if page.group == 'topline'  and paginator.page ==1 %}
+{% if page.group == 'topline' %}
 <div class="toutiao idx-toutiao radius">
     <h2>
         <a href="{{ site:url  }}{{ page.url  }}" target="_blank">{{page.title}}</a>
@@ -55,8 +55,6 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
 </div>
 {% endif %}
 {% endfor %}
-
-
 <!-- 最新要闻 -->
 <div class="idx-news radius">
     <div class="title">
@@ -66,7 +64,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
         <div class="cont-left">
             <ul class="news-ul">
                 {% for page in site.pages limit:3 %}
-{% if page.group == 'news' and paginator.page ==1 %}
+{% if page.group == 'news' %}
                 <li class="clr">
                     <div class="img">
                         <a href="{{ site:url  }}{{ page.url  }}" target="_blank">
@@ -87,7 +85,7 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
         <div class="cont-right">
             <ul class="news-ul">
                 {% for page in site.pages limit:3 offset:3 %}
-            {% if page.group == 'news' and paginator.page ==1  %}
+            {% if page.group == 'news'   %}
                 <li class="clr">
                     <div class="img">
                         <a href="{{ site:url  }}{{ page.url  }}" target="_blank">
@@ -104,10 +102,9 @@ keywords: 育好儿,早教,亲子早教,亲子教育,育儿经验,育儿心理�
                 {% endfor %}
             </ul>
         </div>
-
     </div>
 </div>
-
+{% endif %}
 <!-- 文章列表 -->
 {% for post in paginator.posts %}
 <div class="index_lists">

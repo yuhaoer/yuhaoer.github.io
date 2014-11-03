@@ -612,7 +612,7 @@ color: #646464;
     clear: both;
     text-align: center;
     font-size: 14px;
-    vertical-align: top
+    vertical-align: top;
 }
 .ep-pages a, .ep-pages span {
     display: inline-block;
@@ -623,40 +623,47 @@ color: #646464;
     background: #fff;
     border: 1px solid #e5e5e5;
     overflow: hidden;
-    vertical-align: top
+    vertical-align: top;
 }
 .ep-pages a:hover {
     background: #cc1b1b;
     border: 1px solid #cc1b1b;
-    text-decoration: none
+    text-decoration: none;
 }
 .ep-pages a, .ep-pages a:visited {
-    color: #252525
+    color: #252525;
 }
 .ep-pages a:hover, .ep-pages a:active {
-    color: #ffffff
+    color: #ffffff;
 }
+
+/*.ep-pages a:active {
+        background: #cc1b1b;
+    border: 1px solid #cc1b1b;
+    text-decoration: none;
+}*/
+
 .ep-pages .current {
     background: #cc1b1b;
     border: 1px solid #cc1b1b;
-    color: #fff
+    color: #fff;
 }
 .ep-pages a.current, .ep-pages a.current:visited {
-    color: #ffffff
+    color: #ffffff;
 }
 .ep-pages a.current:hover, .ep-pages a.current:active {
-    color: #ffffff
+    color: #ffffff;
 }
 .ep-pages-ctrl {
     font-weight: bold;
-    font-size: 16px
+    font-size: 16px;
 }
 /*.ep-pages-e5e5e5 {
     color: #e5e5e5
 }*/
 .ep-pages-all {
     font-size: 12px;
-    vertical-align: top
+    vertical-align: top;
 }
 /**********end 分页*************/
 

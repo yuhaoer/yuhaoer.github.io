@@ -637,11 +637,11 @@ color: #646464;
     color: #ffffff;
 }
 
-/*.ep-pages a:active {
+.ep-pages a:active {
         background: #cc1b1b;
     border: 1px solid #cc1b1b;
     text-decoration: none;
-}*/
+}
 
 .ep-pages .current {
     background: #cc1b1b;

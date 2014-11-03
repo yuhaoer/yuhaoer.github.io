@@ -359,6 +359,9 @@ font-size: 0.6em;
 color: #DB6D4C;
 }
 
+.article-bottom .metatag .au span {
+float: right;
+}
 
 .article-bottom .metatag .sor {
     font-weight: bold;

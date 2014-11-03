@@ -31,8 +31,8 @@
     clear: both;
     height: 20px;
 }
-a{
-    color:#333;
+a {
+    color: #333;
 }
 /***********头部**************/
 
@@ -158,25 +158,12 @@ a{
     padding: 0;
 }
 h2.first_title {
-/*    margin: 0px;
-    padding: 0px;*/
-/*    height: 40px;*/
-/*    line-height: 50px;*/
-/*    font-size: 35px;
-    line-height: 38px;*/
-    /*font-weight: bold;*/
-/*    color: #333;*/
-    /*    border-bottom: 1px solid #ededed;*/
-    /*    font-weight: 900px;*/
     overflow: hidden;
-/*    font-size: 1.2em;*/
-    font-weight: bold;
-/*    color: #9F968E;*/
-
     margin: 5px 0 4px;
-color: #369;
-font-size: 18px;
-font-family: 'Microsoft YaHei', '黑体';
+    color: #369;
+    font-size: 18px;
+    font-family: 'Microsoft YaHei', '黑体';
+    font-weight: bold;
 }
 h2.first_title a {
     color: #EA756A;
@@ -223,8 +210,6 @@ h2.first_title a:hover {
     line-height: 20px;
     margin: 10px 0;
 }
-
-
 .likepost h2 {
     font-size: 18px;
     color: #FF8C00;
@@ -240,18 +225,16 @@ h2.first_title a:hover {
     color: #333;
     margin: 0 0 20px 0;
 }
-.postcontent  blockquote {
-padding: 5px;
-margin:2px;
+.postcontent blockquote {
+    padding: 5px;
+    margin: 2px;
 }
-
 .postcontent blockquote p {
-/*font-style: italic;*/
-font-size: 14px;
-font-weight: 900%;
-color: #E36C0A;
+    /*font-style: italic;*/
+    font-size: 14px;
+    font-weight: 900%;
+    color: #E36C0A;
 }
-
 .postcontent p a {
     color: #333;
 }
@@ -298,7 +281,6 @@ color: #E36C0A;
     border-right: 1px solid #E4E5E7;
     box-shadow: 1px 1px 2px rgba(102, 102, 102, 0.1);
 }
-
 .postshare {
     height: 30px;
     padding-top: 10px;
@@ -311,7 +293,6 @@ color: #E36C0A;
 .page:hover {
     color: #009900;
 }
-
 #main h3 {
     padding: 0px;
     margin: 0px;
@@ -393,7 +374,6 @@ color: #E36C0A;
     margin-top: 2px;
     overflow: hidden;
 }
-
 .article-bottom span.date {
     height: 20px;
     float: left;
@@ -622,8 +602,8 @@ color: #646464;
 .linkorg {
     color: #ee7621;
 }
-
 /**************分页****************/
+
 .ep-pages {
     padding: 10px 12px;
     clear: both;
@@ -671,6 +651,7 @@ color: #646464;
 /*.ep-pages-e5e5e5 {
     color: #e5e5e5
 }*/
+
 .ep-pages-all {
     font-size: 12px;
     vertical-align: top;
@@ -813,7 +794,3 @@ img {
         display: inline-block;
     }
     /*end 头条*/
-
-
-
-

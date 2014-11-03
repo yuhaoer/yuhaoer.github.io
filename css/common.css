@@ -410,6 +410,7 @@ float: right;
     font-family: 'arial';
     font-size: 14px;
     font-style: italic;
+    padding-top: 2px;
 }
 .article-bottom .metatag span.tags {
     color: #737373;

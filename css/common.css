@@ -179,6 +179,7 @@ h2.first_title a:hover {
     color: #999;
     border-bottom: 1px solid #eee;
     margin-bottom: 20px;
+    display: inline-block;
 }
 .post-category {
     font-size: 12px;

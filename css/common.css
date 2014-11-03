@@ -358,6 +358,14 @@ font-size: 0.6em;
 .metatag .tags li:hover a {
 color: #DB6D4C;
 }
+.article-bottom .metatag .au {
+float: right;
+font-size: 14px;
+color: #A3A3A3;
+font-weight: bold;
+border-left: solid 1px #E5E5E5;
+padding: 0 10px 0 15px;
+}
 
 .article-bottom .metatag .au span {
 float: right;

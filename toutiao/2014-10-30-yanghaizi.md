@@ -6,8 +6,8 @@ img: toutiao/20141030.jpg
 description: "我们是在养孩子，不是养花、养盘子、养牛奶瓶……感谢这些被孩子蹂躏过的物品吧，它们为孩子的成长之路，铺设了一小块儿碎石。"
 category: Github
 keywords: 孩子淘气怎么办,小孩调皮怎么办
-toutiao: 1
-tags: [Jekyll,Github,头条]
+group: topline
+tags: [孩子淘气,小孩调皮,头条]
 author: 滕静
 source: "壹心理"
 ---

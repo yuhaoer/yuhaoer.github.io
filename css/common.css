@@ -605,8 +605,8 @@ color: #646464;
 .linkorg {
     color: #ee7621;
 }
-/**************分页****************/
 
+/**************分页****************/
 .ep-pages {
     padding: 10px 12px;
     clear: both;
@@ -636,13 +636,6 @@ color: #646464;
 .ep-pages a:hover, .ep-pages a:active {
     color: #ffffff;
 }
-
-.ep-pages a:active {
-        background: #cc1b1b;
-    border: 1px solid #cc1b1b;
-    text-decoration: none;
-}
-
 .ep-pages .current {
     background: #cc1b1b;
     border: 1px solid #cc1b1b;

@@ -58,6 +58,7 @@ body {
 .postbox {
     width: 680px;
     padding: 10px 15px;
+    padding-left: 20px;
 }
 
 /***********左边条********************/

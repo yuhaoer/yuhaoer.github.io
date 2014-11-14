@@ -152,6 +152,7 @@ a {
 
 .book-box {
 border-bottom: 1px dashed #ccc;
+overflow: hidden;
 }
 
 .pull-left {

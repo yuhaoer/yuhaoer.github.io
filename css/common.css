@@ -245,7 +245,6 @@ margin-left: 10px;
 
 .postcontent ul li {
     color: #005580;
-    margin-left: 25px;
 }
 .content_h2 {
     padding: 10px 0px 10px 0px;
@@ -836,3 +835,36 @@ img {
         display: inline-block;
     }
     /*end 头条*/
+
+.book-box {
+border-bottom: 1px dashed #ccc;
+padding: 10px 0;
+}
+
+.pull-left {
+float: left;
+}
+.book-img {
+width: 130px;
+text-align: left;
+margin-top: 5px;
+}
+
+.book-box-ctt {
+width: 150px;
+font-size: 12px;
+}
+
+.pull-right {
+float: right;
+}
+
+.book-box-ctt p {
+color: #333;
+margin: 5px 0;
+}
+
+.book-box-ctt p em {
+color: #999;
+font-style: normal;
+}

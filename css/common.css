@@ -180,6 +180,11 @@ color: #333;
 margin: 5px 0;
 }
 
+.book-box-ctt h4 {
+margin: 0;
+line-height: 24px;
+}
+
 .book-box-ctt p em {
 color: #999;
 font-style: normal;

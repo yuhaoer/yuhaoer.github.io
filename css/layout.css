@@ -48,7 +48,7 @@ body {
 
 /*文章内容*/
 .content {
-    width: 690px;
+    width: 710px;
     margin-right: 10px;
     display: inline;
     padding: 0;
@@ -57,11 +57,11 @@ body {
 
 /***********左边条********************/
 .sidebar {
-    width: 290px;
+    width: 280px;
 }
 
 .side {
- width: 290px;
+ width: 280px;
     padding: 10px;
     margin-bottom: 10px;
 }

@@ -233,9 +233,15 @@ h2.first_title a:hover {
     font-weight: 900%;
     color:#005580;;
 }
+
 .postcontent p a {
     color: #333;
 }
+
+.postcontent ul{
+margin-bottom: 10px;
+}
+
 .postcontent ul li {
     color: #333;
 }

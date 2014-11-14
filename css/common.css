@@ -139,6 +139,7 @@ a {
 }
 /*************end 头部********************/
 
+/**************边栏**********************/
 .side {
     width: 250px;
     padding: 10px;
@@ -151,6 +152,45 @@ a {
     height: 30px;
     line-height: 30px;
 }
+
+
+.book-box {
+border-bottom: 1px dashed #ccc;
+padding: 10px 0;
+}
+
+.pull-left {
+float: left;
+}
+.book-img {
+width: 130px;
+text-align: left;
+margin-top: 5px;
+}
+
+.book-box-ctt {
+width: 150px;
+font-size: 12px;
+}
+
+.pull-right {
+float: right;
+}
+
+.book-box-ctt p {
+color: #333;
+margin: 5px 0;
+}
+
+.book-box-ctt p em {
+color: #999;
+font-style: normal;
+}
+
+
+
+
+
 .content {
     width: 710px;
     margin-right: 10px;
@@ -836,35 +876,3 @@ img {
     }
     /*end 头条*/
 
-.book-box {
-border-bottom: 1px dashed #ccc;
-padding: 10px 0;
-}
-
-.pull-left {
-float: left;
-}
-.book-img {
-width: 130px;
-text-align: left;
-margin-top: 5px;
-}
-
-.book-box-ctt {
-width: 150px;
-font-size: 12px;
-}
-
-.pull-right {
-float: right;
-}
-
-.book-box-ctt p {
-color: #333;
-margin: 5px 0;
-}
-
-.book-box-ctt p em {
-color: #999;
-font-style: normal;
-}

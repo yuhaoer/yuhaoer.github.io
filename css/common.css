@@ -161,7 +161,7 @@ padding-bottom:10px;
 float: left;
 }
 .book-img {
-width: 130px;
+width: 120px;
 text-align: left;
 margin-top: 5px;
 }
@@ -188,13 +188,6 @@ font-style: normal;
 
 
 
-
-.content {
-    width: 710px;
-    margin-right: 10px;
-    display: inline;
-    padding: 0;
-}
 h2.first_title {
     overflow: hidden;
     margin: 5px 0 4px;

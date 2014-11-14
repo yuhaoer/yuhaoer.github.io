@@ -140,11 +140,7 @@ a {
 /*************end 头部********************/
 
 /**************边栏**********************/
-.side {
-    width: 250px;
-    padding: 10px;
-    margin-bottom: 10px;
-}
+
 .side h2 {
     margin: 0 auto;
     font-size: 14px;

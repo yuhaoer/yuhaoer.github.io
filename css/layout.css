@@ -46,14 +46,22 @@ body {
     overflow: hidden;
 }
 
+/*文章内容*/
+.content {
+    width: 700px;
+    margin-right: 10px;
+    display: inline;
+    padding: 0;
+}
+
 
 /***********左边条********************/
 .sidebar {
-    width: 280px;
+    width: 290px;
 }
 
 .side {
- width: 280px;
+ width: 290px;
     padding: 10px;
     margin-bottom: 10px;
 }

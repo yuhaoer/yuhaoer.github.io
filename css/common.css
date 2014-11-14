@@ -534,10 +534,7 @@ padding-top: 3px;
 .links ul li a:hover {
     color: #009900;
 }
-.postbox {
-    width: 680px;
-    padding: 10px 20px;
-}
+
 .post_links {
     background-color: #ededed;
     padding: 5px;

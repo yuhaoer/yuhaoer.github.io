@@ -182,7 +182,12 @@ margin: 5px 0;
 
 .book-box-ctt h4 {
 margin: 0;
-line-height: 28px;
+line-height: 24px;
+}
+
+.book-box-ctt h4 a {
+color: #333;
+font-size: 14px;
 }
 
 .book-box-ctt p em {

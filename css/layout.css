@@ -50,10 +50,13 @@ body {
 /***********左边条********************/
 .sidebar {
     width: 280px;
-        overflow: hidden;
-}
 }
 
+.side {
+    width: 260px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
 /*************底部***************/
 

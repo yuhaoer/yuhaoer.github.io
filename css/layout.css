@@ -14,7 +14,7 @@ body {
 
 
 #header,#main,#sub-main{
-        width: 1080px;
+        width: 1000px;
 }
 /***********头部**************/
 
@@ -49,11 +49,11 @@ body {
 
 /***********左边条********************/
 .sidebar {
-    width: 300px;
+    width: 280px;
 }
 
 .side {
-    width: 300px;
+/*    width: 280px;*/
     padding: 10px;
     margin-bottom: 10px;
 }

@@ -239,12 +239,12 @@ h2.first_title a:hover {
 }
 
 .postcontent ul{
-margin-bottom: 10px;
+margin-bottom: 15px;
 }
 
 .postcontent ul li {
     color: #005580;
-    padding-left: 5px;
+    margin-left: 5px;
 }
 .content_h2 {
     padding: 10px 0px 10px 0px;
